@@ -1,0 +1,27 @@
+.chinh{
+    width: 700px;
+    height: auto;
+    background-color: #00aa88;
+    margin: auto;
+
+}
+.tieude{
+    font-size: 25px;
+    margin-left: 40px;
+}
+.video{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.tieude1{
+    font-size: 17px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.cuoi{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.btn{
+    margin-left: 40px;
+}

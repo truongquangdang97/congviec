@@ -1,0 +1,56 @@
+.chinh{
+    width: 1200px;
+    height: 300px;
+    background-color: #1b6d85;
+    color: #FFFFFF;
+    margin: auto;
+}
+.about{
+    margin-top: 20px;
+    font-size: 28px;
+
+}
+.icon1{
+    background-color: #00b3ee;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.icon2{
+    background-color: #c7254e;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.icon3{
+    background-color: #204d74;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.icon4{
+    background-color: #00b3ee;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.okok li{
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+}
+
+
+
+
+.fab{
+    margin-top: 20px;
+}
+.gach{
+    margin-top: 50px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.cuoi{
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+.chinh{
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background-color: #d5d5d5;
+}
+
+.chuto{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.gach{
+    border-bottom: 2px solid #3c3c3c;
+    height: 1px;
+    width: 50px;
+    color: #ec971f;
+    margin: auto;
+}
+.menu{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.chu{
+    padding: 50px 50px 50px 50px;
+    background-color: #ec971f;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
