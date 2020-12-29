@@ -1,0 +1,21 @@
+.container {
+    background: linear-gradient(to top right, #c7254e, #2aabd2);
+}
+.frames{
+    background: linear-gradient(45deg,#00aa88,#ec971f)
+}
+
+
+.frames{
+    line-height: 1.25;
+    box-sizing: border-box;
+    background-color: #d5d5d5;
+    padding: 10px;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.video iframe{
+    max-width: 100%;
+}

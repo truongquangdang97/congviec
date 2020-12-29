@@ -1,0 +1,24 @@
+.title{
+    background-color: #00aa88;
+    padding: 50% 0 50% 0;
+    text-align: center;
+}
+.title1{
+    font-size: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.title1-1{
+    background-color: #00aa88;
+}
+.title2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title2-1{
+    width: 30%;
+}
+.end{
+    padding-top: 10%;
+}

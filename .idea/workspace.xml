@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="" />
+    <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css2/bai2.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css2/bai3.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css2/bai4.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css2/bai5.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css2/bai6.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css2/bai7.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css2/bai8.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai2.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai3.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai4.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai5.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai6.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai7.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/bai8.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bai1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bai3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bai4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bai5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bai6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bai7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/baitap2.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m5Hwf950Hrrqu3WSeuu8f2vxSL" />
   <component name="ProjectViewState">
@@ -14,9 +55,17 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/photo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -37,16 +86,59 @@
       <option name="presentableId" value="Default" />
       <updated>1608776772014</updated>
       <workItem from="1608776773230" duration="257000" />
+      <workItem from="1608777060588" duration="809000" />
+      <workItem from="1608790675731" duration="4210000" />
+      <workItem from="1609074883777" duration="7450000" />
+      <workItem from="1609119084457" duration="474000" />
+      <workItem from="1609144573926" duration="3250000" />
+      <workItem from="1609158507432" duration="11025000" />
+      <workItem from="1609201252321" duration="2025000" />
     </task>
+    <task id="LOCAL-00001" summary="bai1">
+      <created>1608777306892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608777306892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bai1" />
+    <option name="LAST_COMMIT_MESSAGE" value="bai1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609159625692">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.801@0.23.1440.801" timestamp="1609159625692" />
     <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608776846945">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.804@0.23.1440.804" timestamp="1608776846945" />
+    <state x="306" y="23" width="828" height="804" key="CommitChangelistDialog2" timestamp="1608777303124">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="306" y="23" width="828" height="804" key="CommitChangelistDialog2/0.23.1440.804@0.23.1440.804" timestamp="1608777303124" />
+    <state x="144" y="92" key="DiffContextDialog" timestamp="1608777126806">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="144" y="92" key="DiffContextDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777126806" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1608777310535">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1608777310535" />
+    <state x="500" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1608777148228">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="500" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777148228" />
+    <state x="385" y="148" width="670" height="676" key="search.everywhere.popup" timestamp="1609170923958">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="385" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1609170923958" />
   </component>
 </project>

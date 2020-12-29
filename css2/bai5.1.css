@@ -1,0 +1,31 @@
+.main{
+    background-color:#d5d5d5;
+    text-align: center;
+    font-size: 16px;
+}
+.col-md-9{
+
+    background-color: #d5d5d5;
+}
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item1{
+    background-color: #00b3ee;
+    padding-top:50% ;
+}
+.item2{
+    padding-left: 3%;
+}
+.column1{
+    background-color: #FFFFFF;
+    width: 30%;
+    line-height:1;
+    margin: 10px;
+
+}
+
+
+
