@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css2/bai2.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css2/bai3.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css2/bai4.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css2/bai5.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css2/bai6.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css2/bai7.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css2/bai8.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai2.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai3.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai4.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai5.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai6.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai7.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html2/bai8.1.html" afterDir="false" />
+    <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="baitap">
+      <change afterPath="$PROJECT_DIR$/Css_baitap_big/Big_1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css_baitap_big/Big_2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML_baitap_big/Big-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML_baitap_big/Big_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_baitap_big/Big_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_baitap_big/Big_3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bai7.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bai1.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bai3.css" beforeDir="false" />
@@ -31,6 +16,9 @@
       <change beforePath="$PROJECT_DIR$/css/bai6.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bai7.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/baitap2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css2/bai4.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2/bai4.1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai3.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html2/bai3.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai4.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html2/bai4.1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +28,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1m5Hwf950Hrrqu3WSeuu8f2vxSL" />
   <component name="ProjectViewState">
@@ -92,7 +81,21 @@
       <workItem from="1609119084457" duration="474000" />
       <workItem from="1609144573926" duration="3250000" />
       <workItem from="1609158507432" duration="11025000" />
-      <workItem from="1609201252321" duration="2025000" />
+      <workItem from="1609201252321" duration="5061000" />
+      <workItem from="1609328967434" duration="10909000" />
+      <workItem from="1609378243330" duration="9268000" />
+      <workItem from="1609395500908" duration="11210000" />
+      <workItem from="1609425683044" duration="155000" />
+      <workItem from="1609518649468" duration="1384000" />
+      <workItem from="1609579773611" duration="2065000" />
+      <workItem from="1609586978385" duration="2957000" />
+      <workItem from="1609593902247" duration="6729000" />
+      <workItem from="1609650908996" duration="6395000" />
+      <workItem from="1609810494774" duration="9856000" />
+      <workItem from="1609826594185" duration="10344000" />
+      <workItem from="1609848272607" duration="12894000" />
+      <workItem from="1609896924914" duration="30720000" />
+      <workItem from="1609982367488" duration="14373000" />
     </task>
     <task id="LOCAL-00001" summary="bai1">
       <created>1608777306892</created>
@@ -101,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608777306892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bai2">
+      <created>1609206464707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609206464707</updated>
+    </task>
+    <task id="LOCAL-00003" summary="baitap">
+      <created>1609985100402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609985100402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,36 +126,50 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bai1" />
-    <option name="LAST_COMMIT_MESSAGE" value="bai1" />
+    <MESSAGE value="bai2" />
+    <MESSAGE value="baitap" />
+    <option name="LAST_COMMIT_MESSAGE" value="baitap" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609159625692">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609861346657">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.801@0.23.1440.801" timestamp="1609159625692" />
-    <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608776846945">
+    <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.804@0.23.1440.804" timestamp="1609861346657" />
+    <state x="454" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609344593001">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.804@0.23.1440.804" timestamp="1608776846945" />
-    <state x="306" y="23" width="828" height="804" key="CommitChangelistDialog2" timestamp="1608777303124">
+    <state x="454" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.804@0.23.1440.804" timestamp="1609344593001" />
+    <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609984685018">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state x="306" y="23" width="828" height="804" key="CommitChangelistDialog2/0.23.1440.804@0.23.1440.804" timestamp="1608777303124" />
+    <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.804@0.23.1440.804" timestamp="1609984685018" />
+    <state x="0" y="23" width="828" height="804" key="CommitChangelistDialog2" timestamp="1610014008169">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.801@0.23.1440.801" timestamp="1610014008169" />
+    <state x="306" y="23" width="828" height="804" key="CommitChangelistDialog2/0.23.1440.804@0.23.1440.804" timestamp="1609985099746" />
     <state x="144" y="92" key="DiffContextDialog" timestamp="1608777126806">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="144" y="92" key="DiffContextDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777126806" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1608777310535">
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609985103737">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1608777310535" />
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.801@0.23.1440.801" timestamp="1609206468891" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1609985103737" />
     <state x="500" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1608777148228">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="500" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777148228" />
-    <state x="385" y="148" width="670" height="676" key="search.everywhere.popup" timestamp="1609170923958">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="385" y="192" key="run.anything.popup" timestamp="1609850919689">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="385" y="192" key="run.anything.popup/0.23.1440.804@0.23.1440.804" timestamp="1609850919689" />
+    <state x="385" y="148" width="670" height="679" key="search.everywhere.popup" timestamp="1610001259639">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="385" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1609170923958" />
+    <state x="385" y="148" width="670" height="679" key="search.everywhere.popup/0.23.1440.804@0.23.1440.804" timestamp="1610001259639" />
   </component>
 </project>

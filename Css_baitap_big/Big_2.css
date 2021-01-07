@@ -48,7 +48,7 @@
 }
 .under-2-2{
     background-color: #FFFFFF;
-    padding-top: 1px;
+    padding-top: 5px;
     text-align: center;
     margin: auto;
     width: 100px;
@@ -84,7 +84,6 @@
     background-color: #FFFFFF;
     z-index: 9;
     margin-top: 205px;
-    padding: 0 10%;
 }
 .under-3-1{
     color: #204d74;
@@ -112,7 +111,6 @@
     justify-content: space-around;
     color: #FFFFFF;
     z-index: 9;
-    padding:0 0 0 4%;
     margin-top: 200px;
 }
 .under-4-0{
@@ -172,8 +170,13 @@
     background-size: contain;
     background-image: url("../photo/photo-5.png");
 }
+img{
+    max-width: 100%;
+}
 .under-5 {
-    z-index: 9;
+    background-color: unset;
+    max-width: 100%;
+    z-index: -1;
     margin-left: 40px;
 }
 .under-6{
@@ -181,7 +184,6 @@
     background-color: #FFFFFF;
     z-index: 9;
     float: right;
-
     padding: 15px 16px 15px 65px;
 }
 .under-6-1{
@@ -211,7 +213,6 @@
 
 .under-7{
     z-index: 9;
-    padding: 0 0 0 6%;
 }
 .under-7-1{
     color: #204d74;
@@ -238,7 +239,6 @@
 .under-9{
     background-color: #FFFFFF;
     z-index: 9;
-    padding: 0 0 0 4%;
 }
 .col-md-9{
     padding-right: 0;
@@ -453,4 +453,55 @@
 }
 
 
+.under-17{
+    z-index: 9;
+    padding: 0 32%;
+    color: #204d74;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.qunder-5{
+    max-width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 33px;
+    left: 1px;
+    width: 581px;
+    height: 377px;
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../photo/denhoc.png");
+}
+
+
+
+
+@media(max-width: 700px){
+    .photo-2{
+        width: 3px;
+    }
+    .photo-3{
+        width: 3px;
+    }
+    .photo-4{
+        width: 3px
+    }
+    .photo-5{
+        width: 3px
+    }
+    .photo-6{
+        width: 3px
+    }
+}
+
+@media(max-width:200px)  {
+    .under-5{
+        width: 5px;
+        height: 5px;
+    }
+}
