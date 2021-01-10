@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+     let number_1 = 5;
+     let number_2= 10;
+    //Viết 1 hàm cộng
+     console.log(' Tổng số là : ' + (number_1+number_2));
+    // Viết 1 hàm trừ
+     console.log(' Hiệu số là : ' + ( number_2-number_1));
+     //Viết 1 hàm nhân
+     console.log('Kêt quả phép nhân : ' + ( number_1*number_2));
+     //Viết 1 hàm chia
+     console.log(' Kết quả phép chia : ' + ( number_2/number_1));
+
+
+     //Viết 1 hàm nối 2 chuỗi thành 1
+     let chuoi_1 = "Viet" , chuoi_2= " Nam";
+     console.log(' chuỗi nối thành : '+(chuoi_1+chuoi_2));
+
+     //Viết 1 hàm giải phương trình bậc 2
+     let a = 10, b = 10, c = 0, delta;
+     delta = b * b - 4 * a * c;
+     console.log(delta);
+     if(delta == 0){
+         console.log('Phương trình có nghiệm kép');
+         x1 = -b / (2 * a);
+         x2 = -b / (2 * a);
+         console.log('x1 = ' + x1);
+         console.log('  x2 = ' + x2);
+     }else if(delta < 0){
+         console.log('Phương trình vô nghiệm');
+     }else{
+         x1 = ((-b - Math.sqrt(delta)) / (2*a));
+         console.log(' Nghiêm là x1 = ' + x1);
+         x2 = ((-b + Math.sqrt(delta)) / (2*a));
+         console.log(' Nghiệ là x2 = ' + x2);
+     }
+
+
+     //Khai báo 1 biến quản lý điện thoại của Thế Giới Di Động. Mỗi phần tử là 1 object bao gồm 2 thuộc tính: Tên, giá tiền, hãng
+     let Worldphone =[
+         {
+             Name: 'Iphone',
+             Price: 20,
+             Company : 'Apple'
+         },
+         {
+             Name: 'Galaxy S3',
+             Price: 15,
+             Company : 'Samsung'
+         },
+         {
+             Name: ' Huawai P50',
+             Price: 10,
+             Company : 'Huawai'
+         },
+         {
+             Name: ' Not 20 ',
+             Price: 5,
+             Company : 'Oppo'
+         }
+     ];
+
+     //Viết 1 hàm đếm xem có bao nhiêu điện thoại
+     console.log(' Số điện thoại có là : ' + Worldphone.length);
+
+
+     //Viết 1 hàm tính xem tổng số tiền điện thoại
+     let sum = 0 ;
+     for (let i=0;i<Worldphone.length;i++){
+         sum +=Worldphone[i].Price;
+     }
+     console.log(' Tổng tiền số tiền điện thoại là : ' + sum);
+
+
+     //Viết 1 hàm lấy ra thông tin của điện thoại có tên là iphone22
+     function information(ten){
+         for (let i=0;i<Worldphone.length;i++){
+             if(ten==Worldphone[i].Name){
+                 console.log(Worldphone[i]);
+             }
+         }
+     }
+     console.log(' Thông tin của điện thoai có tên Iphone : '+ information('Iphone'));
+
+
+     //Viết 1 hàm lấy ra tổng số tiền điện thoại của hãng bất kỳ (truyền tên hãng vào)
+     function Total(Company){
+         for (let i=0;i<Worldphone.length;i++){
+             if(Company== Worldphone[i].Company){
+                 console.log(Worldphone[i].Price);
+             }
+         }
+     }
+     console.log('tổng số tiền điện thoại : ' + Total('Samsung'));
+
+     //Viết 1 hàm lấy ra điện thoại có giá trị nhỏ nhất
+     let  Min = Worldphone[0].Price;
+     for( let i=0;i<Worldphone.length;i++){
+         if ( Min>Worldphone[i].Price){
+             Min = Worldphone[i].Price;
+         }
+     }
+     console.log(' điện thoại có giá trị nhỏ nhất :  ' + Min );
+     //Viết 1 hàm lấy ra điện thoại có giá trị lớn nhất
+     let Max = Worldphone[0].Price;
+     for ( let i=0;i<Worldphone.length;i++){
+         if ( Max<Worldphone[i].Price){
+             Max= Worldphone[i].Price
+         }
+     }
+     console.log('điện thoại có giá trị lớn nhất ' + Max);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</body>
+</html>
