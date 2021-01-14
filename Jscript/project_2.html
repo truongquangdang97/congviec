@@ -103,7 +103,7 @@ negative([2, 1,-9, -4,-6, -2, 3]);
 console.log(mang10([9,8,7,6,5,4,3,2,1]))
 
 
-//11 Xóa phần tử có giá trị lớn nhất trong mảng
+///////11 Xóa phần tử có giá trị lớn nhất trong mảng
 function max(array11) {
     let y=[];
     let x ;
@@ -136,17 +136,6 @@ console.log(max([3,2,5,8,9,2,5,8,12,11]));
 
 
 //13 Nối 2 mảng số nguyên (Tự search google có câu lệnh)
-let array1 = [1, 2, 3, 4, 5];
-let array2 = [5, 4, 3, 2, 1];
-let array3 = array1.concat(array2);
-console.log(array3);
-
-
-
-
-
-
-
     let array13_1 = [1, 2, 3, 4, 5];
     let array13_2 = [5, 4, 3, 2, 1];
     function mang13(array13_1,array13_2){
@@ -160,9 +149,9 @@ console.log(array3);
     function mang14(array14){
         let y14=[];
         let x14 = 4;
-        let c14 =0 ;
+        let c14 ;
         for (let i=0;i<array14.length;i++){
-            if (x14=array14[i]){
+            if (x14==array14[i]){
                 array14[i]=c14;{
                     array14.splice(c14,1);
                 }
@@ -173,29 +162,26 @@ console.log(array3);
     }
     console.log(mang14([1,2,3,4]));
 //15 Tìm phần tử xuất hiện nhiều nhất trong mảng số nguyên
-// function mang15(array15){
-//     let x15;
-//     let cong ;
-//     let max=0;
-//     for (let i=0;i<array15.length;i++){
-//         if (array15[i]==array15[i+1]){
-//             cong++
-//             if (cong>max){
-//                 max=cong;
-//                 array15[i]=x15;
-//             }
-//         }
-//     }
-//     console.log(x15)
-// }
-// console.log(mang12([1,1,1,1,2,2,2,3,3,3,3]));
+function mang15(array15){
+    let x15;
+    let cong ;
+    let max=0;
+    for (let i=0;i<array15.length;i++){
+        if (array15[i]==array15[i+1]){
+            cong++
+            if (cong>max){
+                max=cong;
+                array15[i]=x15;
+            }
+        }
+    }
+    console.log(x15)
+}
+console.log(mang12([1,1,1,1,2,2,2,3,3,3,3]));
 
 
 
-// var arr = [ 'A', 'B', 'D', 'E' ];
-// arr.insert(2, 'C');
-//
-// => arr == [ 'A', 'B', 'C', 'D', 'E' ]
+
 
 
 
