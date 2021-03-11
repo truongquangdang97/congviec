@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#x1").click(function (){
+            $("#y1").slideToggle(3000);
+        })
+        $("#stop").click(function (){
+            $("#y1").stop();
+        })
+    })
+
+
+</script>
+<style>
+    #x1{
+        padding: 20px 0;
+        margin-top: 20px;
+        color: #1b6d85;
+        background-color: #ffcc33;
+        width: 300px;
+        text-align: center;
+    }
+    #y1{
+        width: 300px;
+        text-align: center;
+        display: none;
+        background-color: #1b6d85;
+        padding-top: 240px;
+        padding-bottom: 240px;
+        color: white;
+
+    }
+</style>
+<body>
+
+<button id="stop">
+    Nhấn để dừng lại !!!
+</button>
+<div id="x1">
+    Hello ! Nguy hiểm k lại gần !!!
+</div>
+<div id="y1">
+    Không có gì cả !!!!
+</div>
+
+
+</body>
+</html>

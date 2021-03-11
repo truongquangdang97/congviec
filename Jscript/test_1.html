@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    let the_Gioi_Di_Dong = [
+        {
+            name: "iphone 6s plus",
+            price: 100,
+            sold_quantity: 100
+        },
+        {
+            name: "iphone11 pro max",
+            price: 1000,
+            sold_quantity: 80
+        },
+        {
+            name: "iphone 22",
+            price: 10000,
+            sold_quantity: 20
+        },
+        {
+            name: "samsung j6",
+            price: 500,
+            sold_quantity: 250
+        },
+        {
+            name: "vivo neoQQQ",
+            price: 20,
+            sold_quantity: 10
+        }
+    ];
+
+
+    function resultX() {
+        let result = {
+            saleBest: [],
+            revenue: []
+        };
+        let max = {
+            sold_quantity: 0
+        };
+        let total = 0;
+        for (let i = 0; i < the_Gioi_Di_Dong.length; i++) {
+            if (max.sold_quantity < the_Gioi_Di_Dong[i].sold_quantity) {
+                max = the_Gioi_Di_Dong[i];
+            }
+        }
+        total += max.price * max.sold_quantity;
+        result.saleBest.push(max);
+        result.revenue.push(total);
+        return result;
+    }
+    console.log(resultX());
+
+    //tổng doanh thu cửa hàng
+    // function total_money_cellphone(sum) {
+    //   for (let i = 0; i < the_Gioi_Di_Dong.length; i++) {
+    //     sum += the_Gioi_Di_Dong[i].price * the_Gioi_Di_Dong[i].sold_quantity;
+    //   }
+    //   return sum;
+    // }
+    // console.log("doanh thu mặt hàng : " + total_money_cellphone(0));
+
+  //  Tìm ra mặt hàng bán chậm nhất và xóa mặt hàng này đi
+    function delete_sold_quantity(min) {
+        for (let i = 0; i < the_Gioi_Di_Dong.length; i++) {
+            if (min > the_Gioi_Di_Dong[i].sold_quantity) {
+                min = the_Gioi_Di_Dong[i].sold_quantity;
+
+            }
+        }
+        let address = the_Gioi_Di_Dong.indexOf(min)
+        the_Gioi_Di_Dong.splice(address,1);
+        return min;
+    }
+
+    console.log(
+        "mặt hàng bán chậm nhất = " +
+        delete_sold_quantity((the_Gioi_Di_Dong[0].sold_quantity))
+    );
+    for (let i = 0; i < the_Gioi_Di_Dong.length; i++) {
+
+        console.log("hàng còn tồn tại trong cửa hàng:" + the_Gioi_Di_Dong[i].name);
+    }
+
+
+</script>
+</body>
+</html>

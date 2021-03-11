@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    #x1{
+        margin-top: 10px;
+        background-color: #1b6d85;
+        color:#dbdbdb;
+        width: 400px;
+        text-align: center;
+        padding: 20px 0;
+    }
+</style>
+
+<script>
+    $(document).ready(function (){
+        $("#hide1").click(function (){
+            $("#x1").hide(500,function (){
+                alert("Cảnh báo có vỉut . không cấm USB. Cảm ơn .")
+            })
+        })
+        $("#hide2").click(function (){
+            $("#x1").hide(1000);
+            alert("CẢNH BÁO CÓ VIRUT . KHÔNG CẮM USB . XIN CẢM ƠN")
+        })
+    })
+
+</script>
+
+<body>
+<button id="hide1">
+    Hide1
+</button>
+<button id="hide2">
+    Hide2
+</button>
+
+
+<div id="x1">
+   Biến mất và xuất hiện cảnh báo !!!
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .blue{
+        color: #ffcc33;
+    }
+    .color{
+        color: red;
+    }
+    .size{
+        font-size: 30px;
+    }
+    .h1{
+        color: #ce4844;
+
+    }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        //thay đổi màu dòng 1
+        $("#change1").click(function (){
+            $("#x1").addClass("color")
+        })
+        //thay đổi màu dòng 1,2 thay đổi cỡ chữ dòng 2
+        $("#change2").click(function (){
+            $("#x1,#x2").addClass("color")
+            $("#x2").addClass("size")
+        })
+        //thay  đổi màu  sắc hơi khó .
+        $("#change3").click(function (){
+            $("#x3").removeClass("blue")
+        })
+        $("#change4").click(function (){
+            $("#x4").toggleClass("h1");
+        })
+    })
+
+</script>
+<body>
+<button id="change1">
+    Nhấn để tha đổi  dòng 1
+</button>
+<button id="change2">
+    Nhấn để thay đổi dòng 1,2
+</button>
+
+<button id="change3">
+    Nhấn để thay đổi  về màu cũ .
+</button>
+<button id="change4">
+    Thay đổi 2 chiều .
+</button>
+
+
+<h5 id="x1">This is a H5</h5>
+<h4 id="x2">This is a h4</h4>
+<h3 id="x3" class="blue">This is a h3</h3>
+
+<h1 id="x4">BETTER SALER </h1>
+
+
+
+</body>
+</html>

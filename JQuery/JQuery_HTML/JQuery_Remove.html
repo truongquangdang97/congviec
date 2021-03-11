@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#remove1").click(function (){
+            $("p").remove("#x2,#x3")
+        })
+        $("#remove2").click(function (){
+            $("#x1").remove();
+        })
+        //xoa tất cả các phần tử con trong phần tử đã đc  chọn .
+        $("#remove3").click(function (){
+            $("#x").empty();
+        })
+        $("#remove4").click(function (){
+            $("div").remove();
+        })
+    })
+
+</script>
+<body>
+
+<button id="remove1">
+    Nhấn để xoá 2 phần tử có id khác nhau .
+</button>
+<button id="remove2">
+    Nhấn để xoá 1 phần tử id .
+</button>
+<button id="remove3">
+    Nhấn để xoá phần tử con của 1 phần tử  đã chọn .
+</button>
+<button id="remove4">
+    Nhấn để  xoá tất cả phần tử đã  chọn .
+</button>
+
+
+<div id="x" style="background-color: #1b6d85;width: 400px;height: 100px;margin-top: 20px;color: white">
+    <p id="x1">What your name </p>
+    <p id="x2">My name is gril</p>
+    <p id="x3">This is a FPT</p>
+</div>
+
+</body>
+</html>

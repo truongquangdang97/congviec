@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (){
+        $("#show").click(function (){
+            $("#tv").slideDown(500);
+        })
+        $("#hide").click(function (){
+            $("#tv").slideUp(500)
+        })
+        $("#all").click(function (){
+            $("#tv").slideToggle(500);
+        })
+    })
+
+</script>
+
+
+<style>
+    #tv,#show,#hide,#all{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+    #tv{
+        display: none;
+        margin-top: 20px;
+        padding: 40px;
+    }
+</style>
+
+<body>
+<button id="show">
+    show
+</button>
+<button id="hide">
+    hide
+</button>
+<button id="all">
+    all
+</button>
+
+<div id="tv">
+    hello xin chao!!!
+</div>
+</body>
+</html>

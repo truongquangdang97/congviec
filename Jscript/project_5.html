@@ -7,23 +7,21 @@
 <body>
 <script>
 //1 - Truyền vào một mảng số: Tính số phần tử trong mảng, chèn 2 số: vào vị
-    // trí cuối cùng, chèn 2 số vào vị trí đầu tiên, xóa phần tử ở vị trí thứ 2, 3
+ //   trí cuối cùng, chèn 2 số vào vị trí đầu tiên, xóa phần tử ở vị trí thứ 2, 3
+ //    function mang1(array1){
+ //        console.log(array1.length);
+ //        array1.push(8,9);
+ //        array1.unshift(10,11);
+ //        array1.splice(2,2);
+ //
+ //        return array1;
+ //    }
+ //    console.log(mang1([1,2,3,4,5,6,7]));
 
 
-    // function mang1(array1){
-    //     console.log(array1.length);
-    //     array1.push(8,9);
-    //     array1.unshift(10,11);
-    //     array1.splice(2,2);
-    //
-    //     return array1;
-    // }
-    // console.log(mang1([1,2,3,4,5,6,7]));
-
-
-//2- Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
+// 2- Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
 //         function mang2(array2){
-//             let sum =0;
+//             let sum = 0;
 //             array2.forEach(function (item,index){
 //                 if (item<0){
 //                     sum+=item
@@ -35,40 +33,158 @@
 
 //3 Hãy liệt kê các số trong mảng 1 chiều các số thực thuộc đoạn [x, y] truyền vào
 // Ví dụ [1,2,4,5,5], mảng truyền vào [1,3,5] => kết quả [1,5]
-//
-//     function mang3(array3,array4){
-//
-//             let x=[];
-//             for (let i=0;i< array3.length;i++){
-//                 for (let j=0;j<array4.length;j++){
-//                     if (array4[j]!=array3[i]){
-//                       x.push(array4[j])
-//
-//                     }
-//                 }
-//             }
-//             return x ;
-//     }
-//     console.log(mang3([1,2,3,4,5,6,7],[1,2,3,9]))
-//
 // function mang3(array3,array4){
-//
 //     let x=[];
-//     array4.forEach(item4,index4)
-//     array3.forEach(item3,index3)
-//     if (item4!=item3){
-//         x.push(item4);
+//     for (let i=0;i< array3.length;i++){
+//         for (let j=0;j<array4.length;j++){
+//             if (array4[j]==array3[i]){
+//                 x.push(array4[j])
+//             }
+//         }
 //     }
 //     return x ;
 // }
-// console.log(mang3([1,2,3,4,5,6,7],[1,2,3,9]))
+// console.log(mang3([1,2,3,4,5,6,7],[ 1,2,3,4,5,6,7,8,9]))
 
 
-//4 - Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên
-function mang4(array4){
-    let x =0;
-    fo
+
+
+// 4 - Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên
+// function average(arr) {
+//   let sum_average = 0;
+//   let count = 0;
+//   arr.forEach(function (item, index) {
+//     let kiemTra = kiemTraSoNguyenTo(item);
+//     if (kiemTra) {
+//       sum_average += item;
+//       count++;
+//     }
+//   });
+//   return sum_average / count;
+// }
+// function kiemTraSoNguyenTo(so) {
+//   if (so < 2) return false;
+//   if (so == 2) return true;
+//   if(so>2){
+//       let chiaDoi = so / 2;
+//       let dem = 0;
+//       for (let index = 2; index <= chiaDoi; index++) {
+//           if (so % index == 0) dem++;
+//       }
+//       return dem == 0;
+//   }
+// }
+//console.log(average([1, 2, 3, 4, 5, 6]));
+
+
+
+
+    let oto=[
+        {
+            name:'camry',
+            price:100,
+            amount:5,
+        }
+        ,{
+            name:'santafe',
+            price:150,
+            amount:1,
+        }
+        ,{
+            name:'kiamorning',
+            price:50,
+            amount:20,
+        }
+        ,{
+            name:'mayback',
+            price:700,
+            amount:1,
+        }
+        ,{
+            name:'pocche',
+            price:700,
+            amount:2,
+        }
+    ];
+////Tìm ra mặt hàng bán chậm nhất và xóa mặt hàng này đi ;
+function mangX(){
+    let min= oto[0].amount;
+    let x ={
+        mathangbanchamNhat:[],
+        mathangconLai:[],
+    }
+    let mathang;
+    for (let i=0;i<oto.length;i++){
+        if (min>=oto[i].amount){
+            min=oto[i].amount;
+            // mathang= oto[i].name
+            // let vitri = oto.indexOf(mathang)
+            // oto.splice(vitri,1);
+        }
+        mathang= oto[i];
+        let vitri = oto.indexOf(mathang)
+        oto.splice(vitri,1);
+    }
+    //x.mathangbanchamNhat.push(mathang);
+    x.mathangconLai.push(oto)
+    return x ;
 }
+console.log(mangX());
+
+//Tính tổng doanh thu của cửa hàng
+
+// function mangY(){
+//     let total =0;
+//     for (let i=0;i<oto.length;i++){
+//         total += oto[i].price*oto[i].amount
+//     }
+//     return total;
+// }
+// console.log(mangY());
+
+
+
+
+//Tìm ra mặt hàng bán chạy nhất và doanh thu mặt hàng
+//     function mangZ(){
+//         let x={
+//             mathang :[],
+//             doanhThu :[],
+//         }
+//         let total = 0;
+//         let y;
+//         let max =0;
+//         for (let i=0;i<oto.length;i++){
+//             if (max<oto[i].amount){
+//                 max = oto[i].amount;
+//                 y=oto[i];
+//                 total = oto[i].price * oto[i].amount;
+//             }
+//         }
+//         x.mathang.push(y);
+//         x.doanhThu.push(total)
+//         return x;
+//     }
+//     console.log(mangZ());
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

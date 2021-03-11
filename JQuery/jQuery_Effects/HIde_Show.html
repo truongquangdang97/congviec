@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (){
+        $("#show").click(function (){
+            $("p").show(function (){
+                $("p").css("background-color","gold");
+                $("p").css("padding","30px");
+                $("p").css("width","300")
+                $("p").show(1000);
+            });
+        })
+        $("#hide").click(function (){
+            $("p").hide(1000);
+        })
+
+        $("#all").click(function (){
+            $("p").toggle(1000);
+        })
+    })
+</script>
+
+
+
+
+<body>
+<button id="show">
+    show
+</button>
+<button id="hide">
+    hide
+</button>
+<button id="all">
+    all
+</button>
+
+<p>
+    Chi Pu - Hồ Ngọc HÀ - Văn Mai Hương.
+</p>
+
+</body>
+</html>

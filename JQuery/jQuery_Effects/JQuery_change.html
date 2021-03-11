@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+    #x1{
+        color: red;width: 300px;
+        padding: 30px 0;
+        background-color: #1b6d85;text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+
+<script>
+    $(document).ready(function (){
+        $("#inout").click(function (){
+            $("#x1").css("color","blue").slideToggle(2000);//slideUp(2000).slideDown(2000)
+        })
+    })
+
+</script>
+
+<body>
+
+
+<div id="x1">
+    Cảnh báo !!!
+</div>
+<button id="inout">
+    Nhấn để tắt, bặt thông tin .
+</button>
+</body>
+</html>

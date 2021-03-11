@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        //Thêm vào đầu câu thì  dùng append .
+        $("#show1").click(function (){
+            $("#x1").append("No. It is a tomatow")
+        })
+        $("#show2").click(function (){
+            $("#x2").append("<li>Tôi là Quang </li>")
+        })
+        //Thêm vào đầu câu thì dùng  prepend .
+        $("#show3").click(function (){
+            $("#x1").prepend("What your  name .")
+        })
+        $("#show4").click(function (){
+            $("#x2").prepend("<li>Đà Nẵng </li>")
+        })
+    })
+
+</script>
+<style>
+    #x1,#x2{
+        margin-top: 20px;
+
+    }
+</style>
+
+
+<body>
+
+
+
+
+<button id="show3">
+    Nhấn để thêm vào đầu câu trong p
+</button>
+<button id="show4">
+    Nhấn để thêm vào đầu câu trong  ul
+</button>
+<button id="show1">
+    Nhấn để thêm Vào cuối câu
+</button>
+
+<button id="show2">
+    Nhâns để thêm vào cuối câu .
+</button>
+
+<div id="x1">
+    This is a cake
+</div>
+
+<ul id="x2">
+    <li>Hà Nội </li>
+    <li>Thành Phố Hồ Chí Minh .</li>
+</ul>
+
+
+
+</body>
+</html>

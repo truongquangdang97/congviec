@@ -62,15 +62,36 @@ negative([2, 1,-9, -4,-6, -2, 3]);
 
 //5 Tìm vị trí phần tử có giá trị x xuất hiện cuối cùng trong mảng
 
+
+    function mang5(array5,n){
+        let m=-1;
+
+        for (let i=0;i,array5.length;i++){
+            if(n=array5[i]){
+                m=i
+            }
+        }
+        return m;
+    }
+    console.log(viTriCuoi([1, 2, 3, 4, 4, 4, 4, 5], 1));
+
 //6- Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều
     function mang6(array6) {
         let min = array6[0];
         for (let i=0;i<array6.length;i++){
             if (min>array6[i]){
                 min=array6[i];
+                for (let j=0;j<array6.length;j++){
+                    if (min==array6[j]){
+
+                    }
+                }
             }
         }
-        let vitri = array6.indexOf(min);
+
+
+        let vitri=[];
+         vitri = array6.indexOf(min);
         return vitri;
     }
     console.log(mang6([2,3,9,7,6,8,1,1,2,9]))
@@ -87,7 +108,9 @@ negative([2, 1,-9, -4,-6, -2, 3]);
     }
     console.log(mang1([1,2,3,4,6,7,8,9,21]));
 //8 - Sắp xếp mảng theo thứ tự giảm dần
+
 //9- Sắp xếp các phần tử chẵn giảm dần
+
 //10 Xóa phần tử tại vị trí lẻ trong mảng
     function mang10(array10){
         let y =[];
@@ -104,19 +127,20 @@ console.log(mang10([9,8,7,6,5,4,3,2,1]))
 
 
 ///////11 Xóa phần tử có giá trị lớn nhất trong mảng
-function max(array11) {
-    let y=[];
-    let x ;
-    for (let i=0;i<array11.length;i++){
-        if (array11[i]<array11[i+1]){
-            x=array11[i];
-           array11.splice(array11[i],1)
+function max(array8) {
+    let x8 = array8[0];
+    for (let i = 1; i < array8.length; i++) {
+        if(x8<array8[i]){
+            x8 = array8[i];
         }
-    }
-    y=array11;
-    return y;
+    }let y8 = array8.indexOf(x8);
+    array8.splice(location,1);
+
+    return array8;
 }
-console.log(max([3,2,5,8,9,2,5,8,12,11]));
+
+
+console.log(max([1,2,3,4,5,6,7,8,9,10]));
 
 
 //12  Xóa tất cả các phần tử nhỏ hơn X
@@ -153,14 +177,28 @@ console.log(max([3,2,5,8,9,2,5,8,12,11]));
         for (let i=0;i<array14.length;i++){
             if (x14==array14[i]){
                 array14[i]=c14;{
-                    array14.splice(c14,1);
-                }
-            }
-        }
+                    array14.splice(i,1);
+                }}}
         y14=array14;
         return y14;
     }
-    console.log(mang14([1,2,3,4]));
+    console.log(mang14([1,3,6,4,5,2,3,4]));
+// function xoaLonNhat(mang) {
+//     let max = mang[0];
+//     mang.forEach(function (item, index) {
+//         if (item > max) {
+//             max = item;
+//         }
+//     });
+// let address = mang.indexOf(max);
+// mang.splice(address, 1);
+// return mang;
+
+// let arrayReturn = [];
+// mang.forEach(function(item, index) {
+//   if(item != max)
+//     arrayReturn.push(item);
+// });
 //15 Tìm phần tử xuất hiện nhiều nhất trong mảng số nguyên
 function mang15(array15){
     let x15;
@@ -177,7 +215,7 @@ function mang15(array15){
     }
     console.log(x15)
 }
-console.log(mang12([1,1,1,1,2,2,2,3,3,3,3]));
+console.log(mang15([1,1,1,1,2,2,2,3,3,3,3]));
 
 
 

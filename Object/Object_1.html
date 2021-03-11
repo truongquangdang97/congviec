@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+let worldPhone =[
+    {
+        name : " iphone",
+        sale : 1,
+        price : 1000,
+        trademark: "Apple",
+        up(){
+            this.sale +=3
+            return this.sale
+        },
+        total(){
+            return this.sale*this.price
+        },
+        show(){
+           console.log( this.name , this.price)
+        },
+
+    },
+    {
+        name : " Galaxy ",
+        sale : 10,
+        price : 200,
+        trademark: "samsung",
+        up(){
+            this.sale++
+        },
+        total(){
+            return this.sale*this.price
+        }
+    },
+    {
+        name : " p20_untra",
+        sale : 15,
+        price : 50,
+        trademark: "oppo",
+        up(){
+            this.sale +=3
+            return this.sale
+        },
+        total(){
+            return this.sale*this.price
+        }
+
+    },
+    {
+        name : " whith-black",
+        sale : 20,
+        price : 200,
+        trademark: "Nokia",
+        up(){
+            this.sale +=3
+            return this.sale
+        },
+        total(){
+            return this.sale*this.price
+        }
+
+    },
+]
+
+//1Viết một hàm trong object để khi nhân viên bán được một sản phẩm thì tăng số lượng bán lên
+// worldPhone[0].up()
+// console.log(worldPhone[0]);
+
+//2- Viết một hàm trong object để in ra tên sản phẩm + số lượng đã bán
+// worldPhone[0].show();
+
+//3- Viết một hàm trong object để tính tổng số tiền đã bản của sản phẩm
+// let total3 = 0 ;
+// let x3=[];
+// let y3 =[];
+// let m3 = [];
+// function mang3 (){
+//     for( let i=0;i<worldPhone.length;i++){
+//         total3 = worldPhone[i].price*worldPhone[i].sale
+//         x3.push(total3);
+//     }
+//     for(let i=0;i<x3.length;i++){
+//         for (let j=0 ;j<worldPhone.length;j++){
+//             if(x3[i]===worldPhone[j].price*worldPhone[j].sale){
+//                 m3.push(Object.assign({tong : x3[i]},worldPhone[j]));
+//             }
+//         }
+//     }
+//     return m3
+// }
+// console.log(mang3());
+//
+// function sing3(){
+//     for (let i=9;i<worldPhone.length;i++){
+//         worldPhone[i].tong1=worldPhone[i].price*worldPhone[i].sale
+//     }
+//     console.log(worldPhone);
+// }
+// console.log(tong1)
+// sing3();
+
+
+
+
+//4 Tính tổng doanh thu của cửa hàng
+// let sum4=0 ;
+// function sing4(){
+//     for (let i=0;i<worldPhone.length;i++){
+//         sum4 += worldPhone[i].total()
+//     }
+//     return sum4
+// }
+// console.log(sing4());
+
+
+
+//5 Lấy ra sản phẩm có doanh thu nhỏ nhất và xóa đi
+// let  min = worldPhone[0];
+// function sign5(){
+//     for(let i=0;i<worldPhone.length;i++){
+//         if(min.total()>worldPhone[i].total()){
+//             min=worldPhone[i]
+//         }
+//     }
+//     let vitri = worldPhone.indexOf(min)
+//     worldPhone.splice(vitri,1);
+//
+//     return worldPhone;
+// }
+// console.log(sign5());
+
+//6- Lấy ra sản phẩm có doanh thu lớn nhất sử dụng Object.Values
+function  sign6(){
+    let max6=0 ;
+    let x6 ={};
+    let mathang6 ={};
+    for (let i=0;i<worldPhone.length;i++){
+        let p6 = worldPhone[i].sale*worldPhone[i].price;
+        if (max6 < p6){
+            max6=p6
+            mathang6 = worldPhone[i];
+
+        }
+    }
+    return Object.values(mathang6);
+}
+console.log(sign6());
+
+
+
+//7- Sao chép phần tử thứ i (nhập vào) của mảng thành một object khác
+
+function sing8(arr){
+    const upnew = Object.assign({},arr)
+    return upnew;
+}
+console.log(sing8([{name:"iphone",sale:1,price:1000,trademark:"apple"}]));
+
+//8- Xóa tất cả thuộc tính nhãn hiệu .
+function sign8 (){
+    for( let i=0;i<worldPhone.length;i++){
+        delete worldPhone[i].trademark;
+    }
+
+    return worldPhone;
+}
+console.log(sign8());
+// //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

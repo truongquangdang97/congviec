@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="html_1.css">
+</head>
+
+
+
+<style>
+    .bachground_1{
+        margin-bottom: 10px;
+        background-color: red;
+        padding: 10px;
+    }
+    .bachground_2{
+        background-color: #009999;
+        color: white;
+    }
+    .elemen{
+        margin-top: 10px;
+    }
+    .ketqua{
+        color: black;
+    }
+
+
+</style>
+<body>
+<div class="bachground_1" id="enter"><p> Người đẹp </p></div>
+<p class="ketqua" id="show "></p>
+<button onclick="activiti()"> Nhấn </button>
+<button class="elemen" onclick="number()"> Số elemen cảu đầu bài là : </button>
+<button onclick="name1()"> Nhập tên của bạn : </button>
+
+
+
+
+
+<script>
+    function name1() {
+        let d = document.createElement("nhap tên ","input");
+        document.getElementById("enter").appendChild(d);
+    }
+
+
+
+
+    function activiti() {
+        document.getElementById("enter").classList.add("bachground_2");
+
+
+
+        var para = document.createElement("span");
+        var t = document.createTextNode("This is a Ngọc Trinh   .");
+        para.appendChild(t);
+        document.getElementById("enter").appendChild(para);
+        // var x = document.getElementById("enter").childElementCount;
+        // document.getElementById("show ").innerHTML = x;
+    }
+
+
+
+
+
+
+
+
+
+
+    function number() {
+        var x = document.getElementById("enter").childElementCount;
+        document.getElementById("show ").innerHTML = x;
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function mangChanLe(mang) {
+        let ketQua = {
+            mangChan:[],
+            mangLe: [],
+        }
+        // check null, undefined, 0, false
+        // if (!mang) {
+        //     return {}
+        // }
+        // if (ketQua.mangChan == null) {
+        //     ketQua.mangChan = [];
+        // }
+        // if (ketQua.mangLe == null) {
+        //     ketQua.mangLe = [];
+        // }
+        // cách 1
+        for (let i = 0; i < mang.length; i++) {
+            const item = mang[i];
+            if (item % 2 == 0)
+                ketQua.mangChan.push(item);
+            else
+                ketQua.mangLe.push(item)
+        }
+        mang.forEach(function (item, index) {
+            if (item % 2 == 0)
+                ketQua['mangChan'].push(item);
+            else
+                ketQua.mangLe.push(item)
+        })
+        return ketQua;
+    }
+    let tam1 = mangChanLe(0);
+    console.log("tam1 " + JSON.stringify(tam1));
+    let tam = mangChanLe([1, 2, 3, 4, 5]);
+    console.log(tam);
+    console.log(tam.mangChan);
+    console.log(tam.mangLe);
+
+
+
+
+    let so = null;
+    if (!so)
+        console.log("Hậu Hoàng");
+    // cách 2
+    // let mang2 = ["Tuấn", 'Hoàng', 'Đức']
+    // console.log(mang2);
+    // mang2.forEach(function (item, index) {
+    //     console.log(item);
+    //     console.log(index);
+    // })
+    let hoaQua = ["Chuối", "Ổi", 'Táo', "Ổi"];
+    hoaQua.unshift('Táo')
+    console.log(JSON.stringify(hoaQua));
+    // hoaQua.splice(1, 2);
+    // console.log(JSON.stringify(hoaQua));
+    let viTri = hoaQua.indexOf('Ổi');
+    hoaQua.splice(viTri, 1);
+    console.log(JSON.stringify(hoaQua));
+    // Kiểm tra trong mảng có ổi hay không?
+    if (hoaQua.indexOf("Ổi") >= 0)
+        console.log("Trong mảng này có ổi");
+    console.log(hoaQua.indexOf("Mãng cầu"))
+    // object 12 tháng động
+    let thang = {};
+    for (let i = 1; i < 13; i++) {
+        if (i % 2 == 0)
+            thang["thang" + i] = 'Chuối';
+        else
+            thang["thang" + i] = 'Táo';
+    }
+    console.log(thang)
+    // sum += theGioiDong[i].price;  =>  SUM = SUM + theGioiDong[i].price
+
+
+
+</script>
+
+</body>
+</html>

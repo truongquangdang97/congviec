@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//1- In ra phần tử âm của mảng
+    // function negative(array) {
+    //     let ok=[];
+    //     let m;
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (array[i]<0){
+    //             m=array[i]
+    //             ok.push(m);
+    //         }
+    //     }
+    //     console.log(ok);
+    // }
+    // negative([2,-3, 1,-9, -4,-6, -2, 3]);
+
+
+// 2 - Tách 1 mảng thành 2 mảng chẵn và lẻ
+    // function Parity (array1)  {
+    //     let   ketQua   =   {
+    //         mangChan : [  ]  ,
+    //         mangLe : [  ] ,
+    //     }  ;
+    //     array1.forEach(function (item, index) {
+    //         if (item % 2 == 0) ketQua.mangChan.push(item);
+    //         else ketQua.mangLe.push(item);
+    //     }  )  ;
+    //     return ketQua;
+    // }
+    // console.log(Parity([1, 2, 3, 4, 5]));
+
+// 3 Chèn X vào vị trí đầu của mảng 1 chiều
+    //    let mang =[2,3,4];
+    //    let a= mang.unshift(1);
+    //    console.log(mang);
+
+
+
+ // 4 In ra các phần tử chẵn và nhỏ hơn 20
+    //     function  layMangChan ( bring )  {
+    //         let  ketQua1  = [] ;
+    //         bring.forEach(function (item, index) {
+    //             if (item % 2 == 0 && item < 20)
+    //                 ketQua1.push(item);
+    //         } ) ;
+    //         return ketQua1;
+    //     }
+    //     console.log(layMangChan([1, 2, 3, 4,10, 5, 21, 22]));
+
+
+//5 Tìm vị trí phần tử có giá trị x xuất hiện cuối cùng trong mảng
+    // function mang5(array5,n){
+    //     let m=-1;
+    //     for (let i=0;i<array5.length;i++){
+    //         if(n == array5[i]){
+    //             m=i
+    //         }
+    //     }
+    //     return m;
+    // }
+    // console.log(mang5([1, 2, 3, 4, 4, 4, 4, 5], 2));
+
+
+//6    - Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều
+//     function mang6(array6) {
+//             let min=array6[0] ;
+//             for (let i=0;i<array6.length;i++){
+//                 if (min>array6[i]){
+//                     min=array6[i];
+//                 }
+//             }
+//             let day=[];
+//             array6.forEach(function (item,index){
+//                 if (item==min){
+//                     day.push(index);
+//                 }
+//             })
+//
+//             return  day ;
+//
+//         }
+//     console.log(mang6([1,1,1,1,2,3,5,6,7,7,8,9]))
+
+
+ //7   - Tính tổng các phần tử ở vị trí chẵn trong mảng 1 chiều
+ //  function mang7(array7){
+ //    let tong = 0;
+ //    array7.forEach(function (item,index){
+ //        if (index%2==0){
+ //            tong += item;
+ //        }
+ //    });
+ //    return tong ;
+ //    }
+ //    console.log(mang7([1,2,3,4,6,7,8,9,21]));
+
+//8 - Sắp xếp mảng theo thứ tự giảm dần
+//     function mang8(arr){
+//         const len = arr.length;
+//         let dev ={};
+//         for (let i=len-1;i>=0;i--){
+//             dev[i]= [];
+//             for (let j=1;j<=i;j++){
+//                 if (arr[j-1]<arr[j]){
+//                     let temp =arr[j-1];
+//                     arr[j-1]=arr[j];
+//                     arr[j]=temp;
+//                 }
+//             }
+//         }
+//         return arr;
+//     }
+//     console.log(mang8([4,2,6,3,5,8,1,9]))
+ //9- Sắp xếp các phần tử chẵn giảm dần
+ //    function mang8(arr){
+ //        const len = arr.length;
+ //        let dev ={};
+ //        for (let i=len-1;i>=0;i--){
+ //            dev[i]= [];
+ //            for (let j=1;j<=i;j++){
+ //                if (arr[j-1]<arr[j]){
+ //                    let temp =arr[j-1];
+ //                    arr[j-1]=arr[j];
+ //                    arr[j]=temp;
+ //                }
+ //            }
+ //        }
+ //        let x=[];
+ //        for (let i=0;i<arr.length;i++){
+ //            if (arr[i]%2==0){
+ //                x.push(arr[i])
+ //            }
+ //        }
+ //        return x;
+ //    }
+ //    console.log(mang8([4,2,6,3,5,8,1,9]))
+
+//10    - Xóa phần tử tại vị trí lẻ trong mảng
+//     function mang10(array10){
+//         let y =[];
+//         let x  ;
+//         for (let i=0;i<array10.length;i++){
+//             if (i%2==0){
+//                 y.push(array10[i])
+//             }
+
+//         }
+//         return y;
+//     }
+//     console.log(mang10([9,8,7,6,5,4,3,2,1]))
+//
+
+
+
+//11    - Xóa phần tử có giá trị lớn nhất trong mảnh
+        // function mang11(array) {
+        //     let max = array[0];
+        //     array.forEach(function (item, index) {
+        //         if (item > max) {
+        //             max = item;
+        //         }
+        //     });
+        //     while (array.indexOf(max) > -1) {
+        //         let index = array.indexOf(max);
+        //         array.splice(index, 1);
+        //     }
+        //     return array;
+        // }
+        // console.log(mang11([12, 2,13, 12, 5, 6, 8]));
+
+
+// 12   - Xóa tất cả các phần tử nhỏ hơn X
+    //     function xoaNho(mang, x) {
+    //         let arrayMin = [];
+    //         let min;
+    //         for (let i = 0; i < mang.length; i++) {
+    //             if (mang[i] >= x) {
+    //                 min = mang[i];
+    //                 arrayMin.push(min);
+    //             }
+    //         }
+    //         return arrayMin;
+    //     }
+    //     console.log(xoaNho([3, 2, 5, 6, 7], 5));
+
+
+
+//13- Nối 2 mảng số nguyên (Tự search google có câu lệnh)
+    // function Mang13(mang1, mang2) {
+    //     let mang3 = mang1.concat(mang2);
+    //     return mang3;
+    // }
+    // console.log(Mang13([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
+
+
+
+
+
+
+//14- Xóa các phần tử trùng với X trong mảng 1 chiều
+    // function mang14(array14){
+    //     let y14=[];
+    //     let x14 = 4;
+    //     let c14 ;
+    //     for (let i=0;i<array14.length;i++){
+    //         if (x14==array14[i]){
+    //             array14[i]=c14;{
+    //                 array14.splice(i,1);
+    //             }}}
+    //     y14=array14;
+    //     return y14;
+    // }
+    // console.log(mang14([1,3,6,4,5,2,3,4]));
+
+
+//15- Tìm phần tử xuất hiện nhiều nhất trong mảng số nguyên
+// function count(item, arr) {
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] == item)
+//             count++ ;
+//     }
+//     return count;
+// }
+// function mang(arr) {
+//     let max = 0;
+//     let result = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         let _count = count(arr[i], arr);
+//         if (_count > max) {
+//             max = _count;
+//             result = arr[i];
+//         }
+//     }
+//     return result;
+// }
+// console.log(mang([1, 2, 3,3,3,3, 4, 1, 4, 5]));
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

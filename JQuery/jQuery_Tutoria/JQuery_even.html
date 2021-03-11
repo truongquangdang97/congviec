@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function (){
+        //Xoá khi nhán vào nó ( phần tử chưa id đó)
+        $("#x").click(function (){
+            $(this).hide();
+        })
+        //Nhấn đúp để xoá .
+        $("#x1").dblclick(function (){
+            $(this).hide();
+        })
+        //Hàm đc thực thi khi chỏ con chuột vào .
+        $("#show1").mouseenter(function (){
+            // Chỗ này muốn hiện ra hay dổi màu tuỳ ý .... nhiều cách làm .
+            alert("Cảnh báo có vỉrut!!!")
+        })
+        //Hàm đc thực thi khi rời con chuột ra .
+        $("#show2").mouseleave(function (){
+            alert(" Bye Bye Bye!!!")
+        })
+        //SỬ dụng phương thưc on() khá là hay ..........
+        $("#show3").on(
+            {
+                mouseenter:function (){
+                    $(this).css("background-color", "blue")
+                    $(this).css("color","white")
+                },
+                mouseleave :function (){
+                    $(this).css("background-color","red")
+                },
+                click:function (){
+                    $(this).css("background-color","gold")
+                    $(this).css("color","black")
+                }
+            }
+        )
+
+
+
+
+    })
+
+</script>
+
+
+<body>
+
+
+<button id="show1">
+    Trỏ chuôt vào đây
+</button>
+<button id="show2">
+    Dời chuột ra sẽ xuất hiện cảnh báo .
+</button>
+
+<button id="show3">
+    Cái này hay .
+</button>
+
+<div id="x"style="color: #0f0f0f;margin-top: 20px;">
+    This is a apple .
+</div>
+<div id="x1" style="margin-top: 20px">
+    this is a apple .
+</div>
+
+
+</body>
+</html>

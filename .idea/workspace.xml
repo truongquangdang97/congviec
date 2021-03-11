@@ -2,23 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="baitap">
-      <change afterPath="$PROJECT_DIR$/Css_baitap_big/Big_1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Css_baitap_big/Big_2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML_baitap_big/Big-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML_baitap_big/Big_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML(dom)/html_1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML(dom)/html_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML(dom)/html_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML(dom)/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Dimesions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Remove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Set.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_css_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/HIde_Show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Slide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_change.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_stop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/Jquery_Animate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/jQuery_fade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Tutoria/JQuery_even.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Tutoria/JQuery_selector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jscript/project_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jscript/project_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jscript/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jscript/test_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Object/Object_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Object/Object_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_baitap_big/Big_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_baitap_big/Big_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bai1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bai3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bai4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bai5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bai6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bai7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/baitap2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css2/bai4.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2/bai4.1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai3.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html2/bai3.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai4.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html2/bai4.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jscript/project_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jscript/project_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jscript/project_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jscript/project_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jscript/project_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jscript/project_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baitap js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css2/bai2.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2/bai2.1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai3.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai4.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai5.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai6.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai7.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2/bai8.1.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +77,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -96,6 +118,53 @@
       <workItem from="1609848272607" duration="12894000" />
       <workItem from="1609896924914" duration="30720000" />
       <workItem from="1609982367488" duration="14373000" />
+      <workItem from="1610014014340" duration="133000" />
+      <workItem from="1610072848290" duration="1622000" />
+      <workItem from="1610161662402" duration="1103000" />
+      <workItem from="1610174555896" duration="7914000" />
+      <workItem from="1610201202522" duration="9625000" />
+      <workItem from="1610266122266" duration="1013000" />
+      <workItem from="1610351318567" duration="979000" />
+      <workItem from="1610369279290" duration="210000" />
+      <workItem from="1610381117678" duration="156000" />
+      <workItem from="1610415267743" duration="582000" />
+      <workItem from="1610422011013" duration="16804000" />
+      <workItem from="1610446139821" duration="211000" />
+      <workItem from="1610461353739" duration="6384000" />
+      <workItem from="1610508718155" duration="2918000" />
+      <workItem from="1610519185482" duration="11045000" />
+      <workItem from="1610542611683" duration="7915000" />
+      <workItem from="1610587695627" duration="7994000" />
+      <workItem from="1610604146866" duration="6468000" />
+      <workItem from="1610894458523" duration="4789000" />
+      <workItem from="1610938430746" duration="6796000" />
+      <workItem from="1610974163501" duration="28973000" />
+      <workItem from="1611108021214" duration="813000" />
+      <workItem from="1611114320530" duration="333000" />
+      <workItem from="1611149175437" duration="2935000" />
+      <workItem from="1611192259253" duration="4656000" />
+      <workItem from="1611215809772" duration="273000" />
+      <workItem from="1611246671515" duration="216000" />
+      <workItem from="1611451481248" duration="8158000" />
+      <workItem from="1611472261606" duration="2314000" />
+      <workItem from="1611583342962" duration="532000" />
+      <workItem from="1611626607520" duration="2214000" />
+      <workItem from="1611632310801" duration="779000" />
+      <workItem from="1611711203934" duration="376000" />
+      <workItem from="1611731967272" duration="4036000" />
+      <workItem from="1611753289924" duration="5977000" />
+      <workItem from="1611796925838" duration="7107000" />
+      <workItem from="1611842827665" duration="2352000" />
+      <workItem from="1611905478803" duration="494000" />
+      <workItem from="1611934850806" duration="10058000" />
+      <workItem from="1612020381050" duration="613000" />
+      <workItem from="1612060986411" duration="1900000" />
+      <workItem from="1613696985395" duration="2140000" />
+      <workItem from="1613714791881" duration="1526000" />
+      <workItem from="1613966046104" duration="52000" />
+      <workItem from="1615254590925" duration="20789000" />
+      <workItem from="1615346671030" duration="10003000" />
+      <workItem from="1615427610579" duration="283000" />
     </task>
     <task id="LOCAL-00001" summary="bai1">
       <created>1608777306892</created>
@@ -118,7 +187,42 @@
       <option name="project" value="LOCAL" />
       <updated>1609985100402</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="baitap">
+      <created>1610014035049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610014035049</updated>
+    </task>
+    <task id="LOCAL-00005" summary="baitap">
+      <created>1610267029622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610267029622</updated>
+    </task>
+    <task id="LOCAL-00006" summary="baitap1">
+      <created>1610604403292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610604403292</updated>
+    </task>
+    <task id="LOCAL-00007" summary="baitap">
+      <created>1610605961375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610605961375</updated>
+    </task>
+    <task id="LOCAL-00008" summary="baitap">
+      <created>1611029290984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611029290984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,48 +231,67 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bai1" />
     <MESSAGE value="bai2" />
+    <MESSAGE value="baitap1" />
     <MESSAGE value="baitap" />
     <option name="LAST_COMMIT_MESSAGE" value="baitap" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609861346657">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610977755170">
+      <screen x="0" y="23" width="1440" height="798" />
     </state>
+    <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.797@0.23.1440.797" timestamp="1610422703551" />
+    <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.798@0.23.1440.798" timestamp="1610977755170" />
     <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.801@0.23.1440.801" timestamp="1609159625692" />
     <state x="184" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.804@0.23.1440.804" timestamp="1609861346657" />
-    <state x="454" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609344593001">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="454" y="229" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611975479964">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
+    <state x="454" y="229" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.794@0.23.1440.794" timestamp="1611975479964" />
+    <state x="454" y="230" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.798@0.23.1440.798" timestamp="1610162321055" />
     <state x="454" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.804@0.23.1440.804" timestamp="1609344593001" />
     <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609984685018">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.804@0.23.1440.804" timestamp="1609984685018" />
-    <state x="0" y="23" width="828" height="804" key="CommitChangelistDialog2" timestamp="1610014008169">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="0" y="23" width="828" height="797" key="CommitChangelistDialog2" timestamp="1611029290644">
+      <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.801@0.23.1440.801" timestamp="1610014008169" />
+    <state x="0" y="23" width="828" height="797" key="CommitChangelistDialog2/0.23.1440.797@0.23.1440.797" timestamp="1610898402849" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.798@0.23.1440.798" timestamp="1611029290644" />
+    <state x="0" y="23" width="828" height="801" key="CommitChangelistDialog2/0.23.1440.801@0.23.1440.801" timestamp="1610014034803" />
     <state x="306" y="23" width="828" height="804" key="CommitChangelistDialog2/0.23.1440.804@0.23.1440.804" timestamp="1609985099746" />
     <state x="144" y="92" key="DiffContextDialog" timestamp="1608777126806">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="144" y="92" key="DiffContextDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777126806" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609985103737">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="221" y="59" key="SettingsEditor" timestamp="1615254637244">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
-    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.801@0.23.1440.801" timestamp="1609206468891" />
+    <state x="221" y="59" key="SettingsEditor/0.23.1440.794@0.23.1440.794" timestamp="1615254637244" />
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611029293315">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1610605964446" />
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.798@0.23.1440.798" timestamp="1611029293315" />
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.801@0.23.1440.801" timestamp="1610014082069" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.804@0.23.1440.804" timestamp="1609985103737" />
     <state x="500" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1608777148228">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="500" y="166" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777148228" />
+    <state x="212" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610898401635">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="212" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.797@0.23.1440.797" timestamp="1610898401635" />
     <state x="385" y="192" key="run.anything.popup" timestamp="1609850919689">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="385" y="192" key="run.anything.popup/0.23.1440.804@0.23.1440.804" timestamp="1609850919689" />
-    <state x="385" y="148" width="670" height="679" key="search.everywhere.popup" timestamp="1610001259639">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="385" y="147" width="670" height="675" key="search.everywhere.popup" timestamp="1611029748637">
+      <screen x="0" y="23" width="1440" height="798" />
     </state>
+    <state x="385" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1610613124187" />
+    <state x="385" y="147" width="670" height="675" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1611029748637" />
     <state x="385" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1609170923958" />
     <state x="385" y="148" width="670" height="679" key="search.everywhere.popup/0.23.1440.804@0.23.1440.804" timestamp="1610001259639" />
   </component>

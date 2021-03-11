@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let cellPhoneS = [
+        {
+            name: "iphone12",
+            price: 100,
+            trademark: "apple",
+            sold: 200,
+            up() {
+                this.sold+=2;
+            },
+            total() {
+                return this.price * this.sold;
+            }
+        },
+        {
+            name: "iphone12",
+            price: 1000,
+            trademark: "apple",
+            sold: 200,
+            total() {
+                return this.price * this.sold;
+            }
+        },
+
+        {
+            name: "samsungS8",
+            price: 500,
+            trademark: "samsung",
+            sold: 350,
+            output() {
+                // console.log(this.name, this.sold);
+            },
+            total() {
+                return this.price * this.sold;
+            }
+        },
+        {
+            name: "oppo reno5",
+            price: 400,
+            trademark: "oppo",
+            sold: 100,
+            total() {
+                return this.price * this.sold;
+            }
+        }
+    ];
+
+    /* Viết một hàm trong object để khi nhân viên bán được một sản phẩm thì tăng số lượng bán lên */
+    cellPhoneS[0].up(1);
+    // console.log(cellPhoneS[0])
+
+    /* Viết một hàm trong object để in ra tên sản phẩm + số lượng đã bán */
+    cellPhoneS[2].output();
+
+    /* Viết một hàm trong object để tính tổng số tiền đã bản của sản phẩm */
+    cellPhoneS[3].total();
+
+    /* Tính tổng doanh thu của cửa hàng */
+    let total = 0;
+    function totalRevenue() {
+        for (let i = 0; i < cellPhoneS.length; i++) {
+            total += cellPhoneS[i].price * cellPhoneS[i].sold;
+        }
+        return total;
+    }
+    console.log("Tổng doanh thu của cửa hàng là: " + totalRevenue());
+
+    /* Lấy ra sản phẩm có doanh thu nhỏ nhất và xóa đi */
+    function deleteRevennueMin() {
+        let min = cellPhoneS[0];
+        for (let i = 1; i < cellPhoneS.length; i++) {
+            if (cellPhoneS[i].sold * cellPhoneS[i].price < min.sold * min.price) {
+                min = cellPhoneS[i];
+            }
+        }
+        let address = cellPhoneS.indexOf(min);
+        cellPhoneS.splice(address, 1);
+        return min;
+    }
+    console.log(deleteRevennueMin())
+     console.log(cellPhoneS)
+
+    /* Lấy ra sản phẩm có doanh thu lớn nhất sử dụng Object.Values */
+    function revenueMax() {
+        let result = cellPhoneS[0].price * cellPhoneS[0].sold;
+        for (let i = 0; i < cellPhoneS.length; i++) {
+            if (result < cellPhoneS[i].price * cellPhoneS[i].sold) {
+                result = Object.values(cellPhoneS[i]);
+            }
+        }
+        return result;
+    }
+    console.log(revenueMax());
+
+    /* Sao chép phần tử thứ i (nhập vào) của mảng thành một object khác */
+    function copy(array) {
+        let copied = Object.assign({}, array);
+        return copied;
+    }
+    console.log(copy([{name: "oppo reno5",price: 400,trademark: "oppo",sold: 100}]));
+
+    /* Xóa tất cả thuộc tính nhãn hiệu */
+    function deleteTrademark() {
+        for (let i = 0; i < cellPhoneS.length; i++) {
+            delete cellPhoneS[i].trademark;
+        }
+        return cellPhoneS;
+    }
+    console.log(deleteTrademark());
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    #x1{
+        background-color: #1b6d85;
+        color: #dbdbdb;
+        width: 300px;
+        padding: 30px 0;
+        margin-top: 20px;
+
+    }
+</style>
+<script>
+    $(document).ready(function (){
+        $("#showtext").click(function(){
+            alert("Text: " + $("#x1").text());
+        });
+        $("#showHTML").click(function(){
+            alert("HTML: " + $("#x1").html());
+        });
+        $("#showVal").click(function(){
+            alert("Value: " + $("#x2").val());
+        });
+        $("#showLink").click(function (){
+            alert($("#x3").attr("href"))
+        })
+    })
+
+</script>
+
+
+<body>
+<button id="showtext">
+    Showtext
+</button>
+<button id="showHTML">
+    ShowHTML
+</button>
+<button id="showVal">
+    ShowVal
+</button>
+<button id="showLink">
+    ShowLink
+</button>
+
+
+<div id="x1">
+    Thủ đô Hà Nội <Span></Span> Thành Phố Hồ Chí Minh
+</div>
+<p>Name: <input type="text" id="x2" value=" Và thế là hết !!!"></p>
+
+<p><a href="https://www.youtube.com/" id="x3">Youtube</a></p>
+
+
+
+
+</body>
+</html>

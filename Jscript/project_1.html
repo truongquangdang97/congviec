@@ -9,15 +9,27 @@
 
 <script>
      let number_1 = 5;
-     let number_2= 10;
+     let number_2= 15;
     //Viết 1 hàm cộng
-     console.log(' Tổng số là : ' + (number_1+number_2));
+     function hamCong( a,b){
+         return number_1+number_2
+     }
+     console.log('' + hamCong(a,b));
     // Viết 1 hàm trừ
-     console.log(' Hiệu số là : ' + ( number_2-number_1));
+     function hamTru ( number_1,number_2){
+         return number_1-number_2
+     }
+     console.log(''+ hamTru(number_1,number_2));
      //Viết 1 hàm nhân
-     console.log('Kêt quả phép nhân : ' + ( number_1*number_2));
+     function hamNhan ( number_1,number_2){
+         return number_1*number_2
+     }
+     console.log(''+ hamNhan(number_1,number_2));
      //Viết 1 hàm chia
-     console.log(' Kết quả phép chia : ' + ( number_2/number_1));
+     function hamChia ( number_1,number_2){
+         return number_1/number_2
+     }
+     console.log(''+ hamChia(number_1,number_2));
 
 
      //Viết 1 hàm nối 2 chuỗi thành 1
@@ -25,7 +37,7 @@
      console.log(' chuỗi nối thành : '+(chuoi_1+chuoi_2));
 
      //Viết 1 hàm giải phương trình bậc 2
-     let a = 10, b = 10, c = 0, delta;
+     let a = 5, b = 4, c = -1, delta;
      delta = b * b - 4 * a * c;
      console.log(delta);
      if(delta == 0){
@@ -45,78 +57,124 @@
 
 
      //Khai báo 1 biến quản lý điện thoại của Thế Giới Di Động. Mỗi phần tử là 1 object bao gồm 2 thuộc tính: Tên, giá tiền, hãng
-     let Worldphone =[
+     let worldPhone =[
          {
-             Name: 'Iphone',
-             Price: 20,
-             Company : 'Apple'
+             name: 'Iphonee',
+             price: 30,
+             company : 'Apple'
          },
          {
-             Name: 'Galaxy S3',
-             Price: 15,
-             Company : 'Samsung'
+             name: 'Iphone',
+             price: 20,
+             pompany : 'Apple'
          },
          {
-             Name: ' Huawai P50',
-             Price: 10,
-             Company : 'Huawai'
+             name: 'Galaxy S3',
+             price: 15,
+             company : 'Samsung'
          },
          {
-             Name: ' Not 20 ',
-             Price: 5,
-             Company : 'Oppo'
+             name: ' Huawai P50',
+             price: 10,
+             company : 'Huawai'
+         },
+         {
+             name: ' Not 20 ',
+             price: 5,
+             company : 'Oppo'
          }
      ];
 
      //Viết 1 hàm đếm xem có bao nhiêu điện thoại
-     console.log(' Số điện thoại có là : ' + Worldphone.length);
-
-
+     console.log('tong so dien thoai la '+ worldPhone.length);
      //Viết 1 hàm tính xem tổng số tiền điện thoại
-     let sum = 0 ;
-     for (let i=0;i<Worldphone.length;i++){
-         sum +=Worldphone[i].Price;
+     function totalMoney(Sum){
+         let a=0;
+         for (let i=0;i<worldPhone.length;i++){
+             a+=worldPhone[i].price;
+         }
+         return a;
      }
-     console.log(' Tổng tiền số tiền điện thoại là : ' + sum);
+     console.log('tổng số tiền điện thoại là :  '+totalMoney(a));
 
 
-     //Viết 1 hàm lấy ra thông tin của điện thoại có tên là iphone22
+     //Viết 1 hàm lấy ra thông tin của điện thoại có tên là iphone
      function information(ten){
-         for (let i=0;i<Worldphone.length;i++){
-             if(ten==Worldphone[i].Name){
-                 console.log(Worldphone[i]);
+         let a=0;
+         for (let i=0;i<worldPhone.length;i++){
+             if(ten==worldPhone[i].name){
+                 a=worldPhone[i];
              }
-         }
+         };
+         return a;
      }
-     console.log(' Thông tin của điện thoai có tên Iphone : '+ information('Iphone'));
+     console.log ( information ( 'Iphone' ) ) ;
 
 
-     //Viết 1 hàm lấy ra tổng số tiền điện thoại của hãng bất kỳ (truyền tên hãng vào)
-     function Total(Company){
-         for (let i=0;i<Worldphone.length;i++){
-             if(Company== Worldphone[i].Company){
-                 console.log(Worldphone[i].Price);
+     //Viết 1 hàm lấy ra  tiền điện thoại của hãng bất kỳ (truyền tên hãng vào)
+     function tongTien(hang){
+         let x=0;
+         for (let i=0;i<worldPhone.length;i++){
+             if ( worldPhone[i].company==hang){
+                 x+= worldPhone[i].price
+             }
+         };
+         return x;
+     }
+     console.log(' Tong so la : '+tongTien('Samsung'))
+
+
+     //Viết 1 hàm lấy ra điện thoại có giá trị lon nhất
+     function max(){
+         let b=worldPhone[0].price;
+         for(let i=0;i<worldPhone.length;i++){
+             if (b<worldPhone[i].price){
+                 b=worldPhone[i].price;
              }
          }
+         return b;
      }
-     console.log('tổng số tiền điện thoại : ' + Total('Samsung'));
+     console.log(max(b));
 
      //Viết 1 hàm lấy ra điện thoại có giá trị nhỏ nhất
-     let  Min = Worldphone[0].Price;
-     for( let i=0;i<Worldphone.length;i++){
-         if ( Min>Worldphone[i].Price){
-             Min = Worldphone[i].Price;
+     function min(){
+         let c =worldPhone[0].price;
+         for (let i=0;i<worldPhone.length;i++){
+             if (c>worldPhone[i].price){
+                 c=worldPhone[i].price;
+             }
+         };
+         return c;
+     }
+     console.log(min(c));
+
+
+     function quadraticEquation(x, y, z) {
+         let delta = y * y - 4 * x * z;
+         let x1, x2;
+         if (delta == 0) {
+             console.log("Phương trình có nghiệm kép");
+             x1 = -y / (2 * x);
+             x2 = -y / (2 * x);
+             console.log("x1 = " + x1);
+             console.log("x2 = " + x2);
+         } else if (delta > 0) {
+             x1 = (-y - Math.sqrt(delta)) / (2 * x);
+             console.log("x1 = " + x1);
+             x2 = (-y + Math.sqrt(delta)) / (2 * x);
+             console.log("x2 = " + x2);
+         } else {
+             console.log("Phương trình vô nghiệm");
          }
      }
-     console.log(' điện thoại có giá trị nhỏ nhất :  ' + Min );
-     //Viết 1 hàm lấy ra điện thoại có giá trị lớn nhất
-     let Max = Worldphone[0].Price;
-     for ( let i=0;i<Worldphone.length;i++){
-         if ( Max<Worldphone[i].Price){
-             Max= Worldphone[i].Price
-         }
-     }
-     console.log('điện thoại có giá trị lớn nhất ' + Max);
+     console.log(quadraticEquation(3, 5, 1))
+
+
+
+
+
+
+
 
 
 
@@ -135,6 +193,9 @@
 
 
 </script>
+
+
+
 </body>
 
 </body>

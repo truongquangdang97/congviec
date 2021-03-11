@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<style>
+    .bachground_1{
+        margin-bottom: 10px;
+        background-color: red;
+        padding: 10px;
+    }
+    .bachground_2{
+        background-color: #009999;
+        color: white;
+    }
+    .elemen{
+        margin-top: 10px;
+    }
+    .ketqua{
+        color: black;
+    }
+    .xem{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+
+
+
+<div class="bachground_1" id="enter"><p> </p></div>
+<button onclick="activiti()" >Nhấn </button>
+<button class="elemen" onclick="number()"> Tổng  elemen cảu đầu bài là : </button>
+<p id="show"></p>
+
+
+<button class="xem" onclick="xem()" >Độ phân giải của màn hình là : </button>
+<span  id="size" ></span>
+
+
+<button onclick="xemvideo()"> Xem toàn màn hình </button>
+
+<div id="video">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lCvZSI7XJ_g?list=RDlCvZSI7XJ_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+<script>
+    var elem = document.getElementById("video");
+
+    /* Function to open fullscreen mode */
+    function xemvideo() {
+        /* If fullscreen mode is available, show the element in fullscreen */
+        if (
+            document.fullscreenEnabled || /* Standard syntax */
+            document.webkitFullscreenEnabled || /* Safari */
+            document.msFullscreenEnabled /* IE11 */
+        ) {
+
+            /* Show the element in fullscreen */
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen(); /* Standard syntax */
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function xem(){
+        var co = document.defaultView;
+        var y = co.innerHeight;
+        var z = co.innerWidth;
+        document.getElementById("size").innerHTML= "width: " + z +  "; height : "+y ;
+    }
+
+
+
+
+
+    function activiti(){
+        document.getElementById("enter").classList.add("bachgroud_1","bachground_2");
+
+
+        var para = document.createElement("span");
+        var t = document.createTextNode("This is a Ngọc Trinh   .");
+        para.appendChild(t);
+        document.getElementById("enter").appendChild(para);
+    }
+
+    function number() {
+        var x = document.getElementById("enter").childElementCount;
+        document.getElementById("show").innerHTML = x;
+
+
+        let d = document.createElement("input");
+        document.getElementById("show").appendChild(d);
+    }
+</script>
+
+
+
+</body>
+</html>
+
+

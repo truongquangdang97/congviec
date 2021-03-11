@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #x2{
+        color: #1b6d85;
+        font-size: 30px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#showtext").click(function (){
+            $("#x1").text("Đây là Tôi : Quang")
+        })
+        $("#showHTML").click(function (){
+            $("#x1").html("<b>Đây cũng vẫn là tôi nhưng với chữ to hơn  : Quang</b>")
+        })
+        $("#showVal").click(function (){
+            $("#x2").val("Quang ")
+        })
+    })
+
+</script>
+<body>
+<button id="showtext">
+    Showtext
+</button>
+<button id="showHTML">
+    ShowHTML
+</button>
+<button id="showVal">
+    ShowVal
+</button>
+
+
+<p id="x1">This is Quang </p>
+<input type="text" id="x2" value="Hưng Thái ">
+
+
+<div id=""></div>
+<button id="showtext_new">
+    Show Old/New Text
+</button>
+<button id="showHTML_new">
+    Show Old/New HTML
+</button>
+
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1- In ra phần tử âm của mảng
+    // function negative(array) {
+    //     let ok=[];
+    //     let m;
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (array[i]<0){
+    //             m=array[i]
+    //             ok.push(m);
+    //         }
+    //     }
+    //     console.log(ok);
+    // }
+    // negative([2,-3, 1,-9, -4,-6, -2, 3]);
+
+
+//2- Tách 1 mảng thành 2 mảng chẵn và lẻ
+    function Parity (array1)  {
+        let  ketQua  =  {
+            mangChan : [ ] ,
+            mangLe : [ ],
+        } ;
+        array1.forEach(function (item, index) {
+            if (item % 2 == 0) ketQua.mangChan.push(item);
+            else ketQua.mangLe.push(item);
+        } ) ;
+        return ketQua;
+    }
+    console.log(Parity([1, 2, 3, 4, 5]));
+
+ // 3 Chèn X vào vị trí đầu của mảng 1 chiều
+ //    let mang =[2,3,4];
+ //    let a= mang.unshift(1);
+ //    console.log(mang);
+
+// 4 In ra các phần tử chẵn và nhỏ hơn 20
+//     function  layMangChan ( bring )  {
+//         let  ketQua1  = [] ;
+//         bring.forEach(function (item, index) {
+//             if (item % 2 == 0 && item < 20)
+//                 ketQua1.push(item);
+//         } ) ;
+//         return ketQua1;
+//     }
+//     console.log(layMangChan([1, 2, 3, 4,10, 5, 21, 22]));
+
+
+//5 Tìm vị trí phần tử có giá trị x xuất hiện cuối cùng trong mảng
+
+//6- Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều
+//     function mang6(array6) {
+//         let min = array6[0];
+//         for (let i=0;i<array6.length;i++){
+//             if (min>array6[i]){
+//                 min=array6[i];
+//                 for (let j=0;j<array6.length;j++){
+//                     if (min==array6[j]){
+//
+//                     }
+//                 }
+//             }
+//         }
+//
+//
+//         let vitri=[];
+//         vitri = array6.indexOf(min);
+//         return vitri;
+//     }
+//     console.log(mang6([2,3,9,7,6,8,1,1,2,9]))
+
+
+//7In ra các phần tử âm của mảng
+    function negative(array) {
+        let a=[];
+        let soAm ;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] < 0){
+                soAm=array[i]
+                a.push(soAm)
+            }
+        }
+        return a;
+    }
+    console.log(negative([2, 1, -1, -2, 3]));
+
+    //Tách 1 mảng thành 2 mảng chăn và lẻ
+    function chanLe(mang) {
+        let ketQua = {
+            mangChan: [],
+            mangLe: []
+        };
+        mang.forEach(function (item, index) {
+            if (item % 2 == 0) ketQua.mangChan.push(item);
+            else ketQua.mangLe.push(item);
+        });
+        return ketQua;
+    }
+    //console.log(chanLe([1, 2, 3, 4, 5]));
+
+    //Chèn x vào vị trí đầu trong mảng một chiều
+    function chenX(mang) {
+        mang.unshift("x");
+        return mang;
+    }
+    //console.log(chenX([1, 2, 3, 4, 5]));
+
+    //Lấy ra các phần tử chẵn và nhỏ hơn 20
+    function layMangChan(mang) {
+        let ketQua = [];
+        mang.forEach(function (item, index) {
+            if (item % 2 == 0 && item < 20) ketQua.push(item);
+        });
+        return ketQua;
+    }
+    //console.log(layMangChan([1, 2, 3, 4, 5, 21, 22]));
+
+    //Tìm vị trí phần tử có giá trị x xuất hiện cuối cùng trong mảng
+    function viTriCuoi(mang, x) {
+        let cuoi = -1;
+        for (let i = 0; i < mang.length; i++) {
+            if (x == mang[i]) {
+                cuoi = i;
+            }
+        }
+        return cuoi;
+    }
+    console.log(viTriCuoi([1, 2, 3, 4, 4, 4, 4, 5], 1));
+
+    //Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều
+    function viTriNho(mang) {
+        let nho = 0;
+        let min = mang[0];
+        for (let i = 1; i < mang.length; i++) {
+            if (mang[i] < min) {
+                min = mang[i];
+                nho = i;
+            }
+        }
+        return nho;
+    }
+    //console.log("viTriNho " + viTriNho([2, 1, 3, 4, 5, 0]));
+
+    //Tính tổng các phần tử ở vị trí chẵn trong mảng 1 chiều
+    function tongChan(mang) {
+        let total = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (i % 2 == 0) {
+                total += mang[i];
+            }
+        }
+        return total;
+    }
+    //console.log(tongChan([1, 2, 3, 4, 5, 6, 7]));
+
+    //Sắp xếp mảng theo thứ tự giảm dần
+
+    //Sắp xếp các phần tử chẵn giảm dần
+
+    //Xóa phần tử tại vị trí lẻ trong mảng
+    function xoaLe(mang) {
+        console.log(JSON.stringify(mang));
+        let viTriLe = [];
+        let countDelete = 0;
+        let mangLength = mang.length;
+        for (let i = 1; i < mangLength; i += 2) {
+            viTriLe = i;
+            mang.splice(i - countDelete, 1);
+            countDelete++;
+            //console.log(JSON.stringify(mang));
+        }
+        return mang;
+    }
+    //console.log(xoaLe([5, 6, 8, 11, 12, 15, 18]));
+
+    //Xóa phần tử có giá trị lớn nhất trong mảng
+    function xoaLonNhat(mang) {
+        let max = mang[0];
+        mang.forEach(function (item, index) {
+            if (item > max) {
+                max = item;
+            }
+        });
+        // let address = mang.indexOf(max);
+        // mang.splice(address, 1);
+        // return mang;
+
+        // let arrayReturn = [];
+        // mang.forEach(function(item, index) {
+        //   if(item != max)
+        //     arrayReturn.push(item);
+        // });
+
+        // return arrayReturn
+
+        while (mang.indexOf(max) > -1) {
+            let index = mang.indexOf(max);
+            mang.splice(index, 1);
+        }
+        return mang;
+    }
+    //console.log(xoaLonNhat([12, 2, 12, 5, 6, 8]));
+
+    //Xóa tất cả các phần tử nhỏ hơn X1
+    function xoaNho(mang, x) {
+        let nhoHonX = [];
+        let min;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] >= x) {
+                min = mang[i];
+                nhoHonX.push(min);
+            }
+        }
+        return nhoHonX;
+    }
+    //console.log(xoaNho([3, 2, 5, 6, 7], 5));
+
+    //Nối 2 mảng số nguyên
+    function noiMang(mang1, mang2) {
+        let mang3 = mang1.concat(mang2);
+        return mang3;
+    }
+    console.log(noiMang([1, 2, 3, 3, 3, 4, 5], [6, 7, 8, 9, 10]));
+
+    //Xóa các phần tử trùng với X trong mảng 1 chiều
+    function xoaTrung(mang, x) {
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] == x) {
+                let address = mang.indexOf(x);
+                mang.splice(address, 1);
+            }
+        }
+        return mang;
+    }
+    console.log(xoaTrung([7, 3, 2, 7, 6, 7], 7));
+
+
+
+</script>
+
+
+
+</body>
+</html>
