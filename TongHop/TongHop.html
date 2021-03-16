@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.4.1/dist/css/bootstrap.css">
+</head>
+<style>
+    button{
+        margin-top: 20px;
+    }
+    .col-md-4{
+        border-bottom-left-radius:1px ;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="jQuery Effects" style="color: #1b6d85;font-size: 40px">
+    jQuery Tutoria .
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+Selector
+</div>
+
+<script>
+    $(document).ready(function (){
+        $("#selector_1").click(function (){
+            $("#selector1").hide();
+        })
+    })
+
+    function selector_2(){
+      var  xoa= document.getElementById("selector2");
+        xoa.remove()
+    }
+
+
+</script>
+
+
+<body>
+
+//////////////////jQuery Selectors
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="tutorial_1">
+                <div class="selector_1">
+                    <button id="selector_1">
+                        Nhấn để xoá
+                    </button>
+                    <button onclick="selector_2()">
+                        Nhấn để xoá bên js .
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div id="selector1">
+                This is a apple
+            </div>
+        </div>
+        <div  class="col-md-4">
+            <div id="selector2">
+                This is a apple
+            </div>
+            <div id="demo"></div>
+        </div>
+    </div>
+</div>
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Even
+</div>
+<!--/////////////JQuery_even-->
+<script>
+    $(document).ready(function (){
+        $("#click_1").click(function (){
+            $(this).hide();
+        })
+        $("#click_2").dblclick(function (){
+            $(this).hide()
+        })
+        $("#even_1").mouseenter(function (){
+            // Chỗ này muốn hiện ra hay dổi màu tuỳ ý .... nhiều cách làm .
+            alert("Cảnh báo có vỉrut!!!")
+        })
+        //Hàm đc thực thi khi rời con chuột ra .
+        $("#evan2").mouseleave(function (){
+            alert(" Bye Bye Bye!!!")
+        })
+        //SỬ dụng phương thưc on() khá là hay ..........
+        $("#even_3").on(
+            {
+                mouseenter:function (){
+                    $(this).css("background-color", "blue")
+                    $(this).css("color","white")
+                },
+                mouseleave :function (){
+                    $(this).css("background-color","red")
+                },
+                click:function (){
+                    $(this).css("background-color","gold")
+                    $(this).css("color","black")
+                }
+            })
+    })
+</script>
+<div class="container">
+    <diV class="row">
+        <div class="col-md-4">
+            <button id="even_1">
+                Trỏ chuôt vào đây
+            </button>
+            <button id="evan2">
+                Dời chuột ra sẽ xuất hiện cảnh báo .
+            </button>
+            <div>
+                <button id="even_3">
+                    Cái này hay .
+                </button>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <div id="click_1" style="margin-top: 20px"> Nhấn vào để xoá </div>
+            <div id="click_2" style="margin-top: 20px"> Nhấn dúp để xoá </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <input id="even_4" style="margin-top: 20px" type="button" onclick="alert('hello ')" value="Nhấn vào là hiện thông báo trong "/>
+            </div>
+        </div>
+    </diV>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+
+
+<div class="jQuery Effects" style="color: #1b6d85;font-size: 40px">
+    jQuery Effects
+</div>
+
+
+
+
+<!--//////////////////////////////////////////Hide and hideshow-->
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Hide and hideshow
+</div>
+<script>
+    $(document).ready(function (){
+        $("#hideshow").click(function (){
+                $("#hidenshow_10").css("background-color","gold");
+                $("#hidenshow_10").css("padding","30px");
+                $("#hidenshow_10").css("width","300")
+                $("#hidenshow_10").show(1000);
+
+        })
+        $("#hide").click(function (){
+            $("#hidenshow_10").hide(1000);
+        })
+
+        $("#all").click(function (){
+            $("#hidenshow_10").toggle(1000);
+        })
+    })
+
+    function hideshow11(){
+        var showhide= document.getElementById("hidenshow");
+        if (showhide.style.display==="none"){
+            showhide.style.display="block";
+            showhide.style.backgroundColor="gold"
+        }else {
+            showhide.style.display="none";
+            showhide.style.backgroundColor="gold"
+        }
+    }
+
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="hideshow">
+                Show
+            </button>
+            <button id="hide">
+                hide
+            </button>
+            <button id="all">
+                all
+            </button>
+            <button onclick="hideshow11()">all in js</button>
+        </div>
+        <div class="col-md-4">
+            <p id="hidenshow_10">
+                Chi Pu - Hồ Ngọc HÀ - Văn Mai Hương.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p id="hidenshow" style="display: none;width:300px;padding: 30px;">
+                Chi Pu - Hồ Ngọc HÀ - Văn Mai Hương.
+            </p>
+            <p id="hideshow8"></p>
+        </div>
+
+    </div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+
+
+
+
+<!--//////////////////////////////////////////Fade-->
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+ Fade
+</div>
+
+<style>
+    .fadex1{
+        opacity: 1;
+        transition-duration: 2s;
+    }
+    .fadex2{
+        opacity: 0;
+        transition-duration: 2s;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        $("#fade_1").click(function(){
+            $("#fade1").fadeIn(500);
+            $("#fade2").fadeIn(700);
+            $("#fade3").fadeIn(1000);
+        });
+        $("#fade_2").click(function (){
+            $("#fade1").fadeOut(500);
+            $("#fade2").fadeOut(700);
+            $("#fade3").fadeOut(1000);
+        })
+        $("#fade_3").click(function (){
+            $("#fade1").fadeToggle(500);
+            $("#fade2").fadeToggle(700);
+            $("#fade3").fadeToggle(1000);
+        })
+    });
+</script>
+
+
+
+<div class="container">
+    <div class="show">
+        <div class="col-md-4">
+            <button id="fade_1">
+                show
+            </button>
+            <button id="fade_2">
+                hide
+            </button>
+            <button id="fade_3">
+                all
+            </button>
+            <button onclick="fade_4()">
+                hide in JS
+            </button>
+            <button onclick="fade_5()">
+                show in JS
+            </button>
+            <button onclick="fade_6()">
+                all in JS
+            </button>
+
+        </div>
+        <div class="col-md-4">
+            <div id="fade1" style="width: 100px;height:100px;background-color: #ff413a;margin-top: 20px;display:none"></div>
+            <div id="fade2" style="width: 100px;height:100px;background-color: #1b6d85;margin-top: 20px;display:none"></div>
+            <div id="fade3" style="width: 100px;height:100px;background-color: #ffcc33;margin-top: 20px;display:none"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="xxx" style="display: block">
+                <div id="fade4" style="width: 100px;height:100px;background-color: #ff413a;margin-top: 20px"></div>
+                <div id="fade5" style="width: 100px;height:100px;background-color: #1b6d85;margin-top: 20px"></div>
+                <div id="fade6" style="width: 100px;height:100px;background-color: #ffcc33;margin-top: 20px">
+            </div>
+
+
+
+            <script>
+                t9 = document.getElementById("xxx");
+                function fade_4(){
+                    t9.style.opacity=0;
+                    t9.style.transitionDuration="2s";
+                }
+                function fade_5(){
+                    t9.style.opacity=1;
+                    t9.style.transitionDuration="2s";
+                }
+                function fade_6(){
+                    t9.classList.toggle("fadex1");
+                    t9.classList.toggle("fadex2");
+                }
+            </script>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">-->
+</div>
+<!--//////////////////////////////////////////Fade-->
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Slide
+</div>
+
+
+<script>
+    $(document).ready(function (){
+        $("#slide").click(function (){
+            $("#slide_1").slideDown(500);
+        })
+        $("#slide2").click(function (){
+            $("#slide_1").slideUp(500)
+        })
+        $("#slide3").click(function (){
+            $("#slide_1").slideToggle(500);
+        })
+    })
+</script>
+
+<style>
+    #slide_1,#slide,#slide2,#slide3{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+    #slide_1{
+        display: none;
+        margin-top: 20px;
+        padding: 40px;
+    }
+    .sli1{
+        height: 100px;
+        background-color: #1b6d85;
+        margin: 20px 0 20px 0;
+    }
+
+    .up{
+        height: 0;
+        transition-duration:1s;
+    }
+    .dow{
+        height: 150px;
+        transition-duration: 1s;
+    }
+
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="slide">
+                show
+            </button>
+            <button id="slide2">
+                hide
+            </button>
+            <button id="slide3">
+                all
+            </button>
+            <button onclick="sli3()">
+                Nhấn để chạy bên JS .
+            </button>
+
+        </div>
+        <div class="col-md-4">
+            <div id="slide_1">
+                hello xin chao!!!
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div id="sli2" class="sli1 up" style="text-align: center;color: whitesmoke">
+                hello
+            </div>
+            <script>
+                t = document.getElementById("sli2")
+                function sli3(){
+                    t.classList.toggle("up");
+                    t.classList.toggle("dow");
+                }
+            </script>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<!--//////////////////////////////////////////Animate-->
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Animate
+</div>
+<style>
+    #Animate_1{
+        text-align: center;
+        margin: auto;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#animate_2").click(function(){
+            $("#Animate_1").animate({left: '250px'});
+        });
+        $("#animate_3").click(function (){
+            $("#Animate_1").animate(
+                {
+                    left:'250px',
+                    width:'200px',
+                    height:'200px',
+                    opacity: '1,5',
+                }
+            )
+        })
+        $("#animate_4").click(function (){
+            $("#Animate_1").animate(
+                {
+                    left:'250px',
+                    width:'+=100px',
+                    height:'+=100px',
+                    opacity: '1,5',
+                }
+            )
+        })
+        // $("#animate_24").click()(function (){
+        //     $("#Animate_1").animated(
+        //         {
+        //             left:'250px',
+        //             // width:'=100px-',
+        //             // height:'=100px-',
+        //
+        //             opacity: '1,5',
+        //         }
+        //     )
+        // })
+        $("#animate_5").click(function (){
+            $("#Animate_1").animate({
+                left:'toggle',
+                width:'toggle',
+                height:'toggle',
+
+            })
+        })
+        $("#animate_6").click(function (){
+            // $("#Animate_1").animate(
+            //     {
+            //         left:'250px',
+            //         width:'200px',
+            //         height:'200px',
+            //         opacity: '1,5'
+            //     }
+            // )
+            var showout = $("#Animate_1")
+            showout.animate({left: '300px'}, "slow");
+            showout.animate({fontSize: '40px'}, "slow");
+        })
+
+
+    });
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="animate_2" >Nhấn để hiện ra </button>
+            <button id="animate_3"> Nhấn để dịch chuyển và cho to hình ra </button>
+            <button id="animate_4"> Nhấn để dịch chuyển và cho to hình ra theo cấp số nhân. </button>
+            <!--<button id="animate_24"> Nhấn để dịch chuyển và cho nhỏ hình vào theo cấp số nhân. </button>-->
+            <button id="animate_5" >Thu vào mở ra  </button>
+            <button id="animate_6">Chữ chạy nhảy và to ra trên màn hình </button>
+        </div>
+        <div class="col-md-4">
+            <div id="Animate_1"style="background-color:gold  ;width: 100px;height: 100px;margin-top: 20px;position:absolute">Hello</div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div id="Animate"style="background-color:gold  ;width: 100px;height: 100px;margin-top: 20px;position:absolute">Hello</div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<!--//////////////////////////////////////////Stop-->
+
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Stop
+</div>
+<script>
+    $(document).ready(function (){
+        $("#stop2").click(function (){
+            $("#stop3").slideToggle(3000);
+        })
+        $("#stop1").click(function (){
+            $("#stop3").stop();
+        })
+    })
+
+
+</script>
+<style>
+    #stop2{
+        padding: 20px 0;
+        margin-top: 20px;
+        color: #1b6d85;
+        background-color: #ffcc33;
+        width: 300px;
+        text-align: center;
+    }
+    #stop3{
+        width: 300px;
+        text-align: center;
+        display: none;
+        background-color: #1b6d85;
+        padding-top: 240px;
+        padding-bottom: 240px;
+        color: white;
+
+    }
+</style>
+
+
+<div class="container">
+<div class="row">
+    <div class="col-md-4">
+        <button id="stop1">
+            Nhấn để dừng lại !!!
+        </button>
+    </div>
+    <div class="col-md-4">
+
+        <div id="stop2">
+            Hello ! Nguy hiểm k lại gần !!!
+        </div>
+        <div id="stop3">
+            Không có gì cả !!!!
+        </div>
+    </div>
+
+    <div class="col-md-4"></div>
+
+</div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<!--//////////////////////////////////////////callback-->
+
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    callback
+</div>
+<style>
+    #callback3,#callback4{
+        margin-top: 10px;
+        background-color: #1b6d85;
+        color:#dbdbdb;
+        width: 200px;
+        text-align: center;
+        padding: 20px 0;
+    }
+</style>
+
+<script>
+    $(document).ready(function (){
+        $("#callback1").click(function (){
+            $("#callback3").hide(500,function (){
+                alert("Cảnh báo có vỉut . không cấm USB. Cảm ơn .")
+            })
+        })
+        $("#callback2").click(function (){
+            $("#callback3").hide(1000);
+            alert("CẢNH BÁO CÓ VIRUT . KHÔNG CẮM USB . XIN CẢM ƠN")
+        })
+    })
+
+</script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="callback1">
+                show1
+            </button>
+            <button id="callback2">
+                show2
+            </button>
+            <button onclick="callback_3()">
+                show3
+            </button>
+            <button onclick="callback_4()">
+                show4
+            </button>
+
+        </div>
+        <div class="col-md-4">
+            <div id="callback3">
+                Biến mất và xuất hiện cảnh báo !!!
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="callback4">
+                Biến mất và xuất hiện cảnh báo !!!
+            </div>
+            <script>
+                callback =
+            </script>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<!--//////////////////////////////////////////callback-->
+
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Chaining
+</div>
+<style>
+    #chaining2{
+        color: red;width: 300px;
+        padding: 30px 0;
+        background-color: #1b6d85;text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+
+<script>
+    $(document).ready(function (){
+        $("#chaining1").click(function (){
+            $("#chaining2").css("color","blue").slideToggle(2000);//slideUp(2000).slideDown(2000)
+        })
+    })
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="chaining1">
+                Nhấn để tắt, bặt thông tin .
+            </button>
+        </div>
+        <div class="col-md-4">
+            <div id="chaining2">
+                Cảnh báo !!!
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+
+
+<div class="jQuery Effects" style="color: #1b6d85;font-size: 40px">
+    jQuery HTML .
+</div>
+
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Get
+</div>
+<!--text() - Đặt hoặc trả về nội dung văn bản của các phần tử đã chọn-->
+<!--html() - Đặt hoặc trả về nội dung của các phần tử đã chọn (bao gồm cả đánh dấu HTML)-->
+<!--val() - Đặt hoặc trả về giá trị của các trường biểu mẫu-->
+
+<style>
+    #get1,#get4{
+        background-color: #1b6d85;
+        color: #dbdbdb;
+        width: 300px;
+        padding: 30px 0;
+        margin-top: 20px;
+
+    }
+    #get2,#get3,#get5,#get6{
+        margin-top: 20px;
+    }
+</style>
+<script>
+    $(document).ready(function (){
+        $("#getText").click(function(){
+            alert("Text: " + $("#get1").text());
+        });
+        $("#getHTML").click(function(){
+            alert("HTML: " + $("#get1").html());
+        });
+        $("#getVal").click(function(){
+            alert("Value: " + $("#get2").val());
+        });
+        $("#getLink").click(function (){
+            alert($("#get3").attr("href"))
+        })
+    })
+    function getTextjs(){
+        alert(document.getElementById("get4").innerText);
+    }
+    function getHTMLjs(){
+        alert(document.getElementById("get4").innerHTML)
+    }
+    function getValjs(){
+        alert(document.getElementById("get5").value);
+    }
+
+</script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+
+            <button id="getText">
+                Show Text
+            </button>
+            <button id="getHTML">
+                Show HTML
+            </button>
+            <button id="getVal">
+                Show Val
+            </button>
+            <button id="getLink">
+                Show Link
+            </button>
+            <button onclick="getTextjs()">
+                Show text in JS
+            </button>
+            <button onclick="getHTMLjs()">
+                Show HTML in JS
+            </button>
+            <button onclick="getValjs()">
+                Show Val in js
+            </button>
+        </div>
+        <div class="col-md-4">
+            <div id="get1">
+                Thủ đô Hà Nội <Span></Span> Thành Phố Hồ Chí Minh
+            </div>
+            <p>Name: <input type="text" id="get2" value=" Và thế là hết !!!"></p>
+
+            <p><a href="https://www.youtube.com/" id="get3">Youtube</a></p>
+        </div>
+
+        <div class="col-md-4">
+            <div id="get4">
+                Hải Phòng  <Span></Span> Đà Nẵng
+            </div>
+            <p>Name: <input type="text" id="get5" value=" Why not m!!!"></p>
+
+            <p><a href="https://www.youtube.com/" id="get6">Youtube</a></p>
+        </div>
+        </div>
+
+    </div>
+</div>
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Set
+</div>
+<!-- -text  Đặt hoặc trả về nội dung văn bản của các phần tử đã chọn-->
+<!--html() - Đặt hoặc trả về nội dung của các phần tử đã chọn (bao gồm cả đánh dấu HTML)-->
+<!--val() - Đặt hoặc trả về giá trị của các trường biểu mẫu-->
+
+<style>
+    #set2,#set4{
+        color: #1b6d85;
+        font-size: 30px;
+    }
+    .q{
+        color: #ce4844;font-size: 20px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#settext").click(function (){
+            $("#set1").text("Đây là Tôi : Quang")
+        })
+        $("#setHTML").click(function (){
+            $("#set1").html("<b>Đây cũng vẫn là tôi nhưng với chữ to hơn  : Quang</b>")
+        })
+        $("#setVal").click(function (){
+            $("#set2").val("Quang ")
+        })
+    })
+    function setTextJs(){
+          document.getElementById("set3").innerHTML="I am Quang";
+    }
+    function setHTMLJs(){
+        //document.getElementById("set3").innerHTML="<b>Vẫn là tôi nhưng chữ in đâm </b>"
+        x = document.getElementById("set3");
+        x.classList.add("q");
+        x.innerHTML="ghép css vào và thay luôn Text ";
+    }
+    function setValJS(){
+        x = document.getElementById("set4");
+        // x.classList.add("q");
+        x.value="Quang in JS"
+    }
+
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="settext">
+                Trả về một đoạn texxt  mới .
+            </button>
+            <button id="setHTML">
+                Trả về một đoạn text mới nhưng có them css .
+            </button>
+            <button id="setVal">
+                Trả về một đoạn text mới trong value .
+            </button>
+
+            <button onclick="setTextJs()">
+                Trả về một đoạn texxt  mới in Js.
+            </button>
+            <button onclick="setHTMLJs()">
+                Trả về một đoạn text mới nhưng có them css trong JS.
+            </button>
+            <button onclick="setValJS()">
+                Trả về một đoạn text mới trong value in JS.
+            </button>
+        </div>
+        <div class="col-md-4">
+            <p id="set1">This is Quang </p>
+            <input type="text" id="set2" value="Hưng Thái ">
+        </div>
+
+        <div class="col-md-4">
+            <p id="set3">What your name .</p>
+            <input type="text" id="set4" value="Thai Hung">
+        </div>
+
+    </div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+
+
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    ADD
+</div>
+<!--append() - Chèn nội dung vào cuối các phần tử đã chọn-->
+<!--prepend() - Chèn nội dung vào đầu các phần tử đã chọn-->
+<!--after() - Chèn nội dung sau các phần tử đã chọn-->
+<!--before() - Chèn nội dung trước các phần tử đã chọn-->
+<script>
+    $(document).ready(function (){
+        //Thêm vào đầu câu thì  dùng append .
+        $("#after").click(function (){
+            $("#add1").append("No. It is a tomatow")
+        })
+        $("#before").click(function (){
+            $("#add2").append("<li>Tôi là Quang </li>")
+        })
+        //Thêm vào đầu câu thì dùng  prepend .
+        $("#append").click(function (){
+            $("#add1").prepend("What your  name .")
+        })
+        $("#prepend").click(function (){
+            $("#add2").prepend("<li>Đà Nẵng </li>")
+        })
+    })
+    function add1(){
+        var x = document.getElementById("add_3");
+        var t = document.createTextNode("what your name ")
+        x.appendChild(t)
+        document.getElementById("add_3").appendChild(x);
+    }
+    function add2(){
+        var addp2 =document.getElementById("add_4");
+        var addli2 = document.createTextNode("Đà Nẵng")
+        addp2.appendChild(addli2);
+        document.getElementById("add_4").appendChild(addp2);
+    }
+
+
+</script>
+<style>
+    #add1,#add2{
+        margin-top: 20px;
+
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="append">
+                Nhấn để thêm vào đầu câu trong
+            </button>
+            <button id="prepend">
+                Nhấn để thêm vào đầu câu trong
+            </button>
+            <button id="after">
+                Nhấn để thêm Vào cuối câu
+            </button>
+
+            <button id="before">
+                Nhâns để thêm vào cuối câu .
+            </button>
+
+            <button onclick="add1()">
+                Thêm 1 phần tử bên JS .
+            </button>
+            <button onclick="add2()">
+                Thêm 1 phần tử trong js phân li
+            </button>
+        </div>
+        <div class="col-md-4">
+            <div id="add1">
+                This is a cake
+            </div>
+
+            <ul id="add2">
+                <li>Hà Nội </li>
+                <li>Thành Phố Hồ Chí Minh .</li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-4">
+            <div id="add_3" style="margin-top: 20px">
+                This is a cake
+            </div>
+
+            <ul id="add_4" style="margin-top: 20px">
+                <li>Hà Nội </li>
+                <li>Thành Phố Hồ Chí Minh .</li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Remove
+</div>
+<script>
+    $(document).ready(function (){
+        $("#remove1").click(function (){
+            $("p").remove("#remo2,#remo3")
+        })
+        $("#remove2").click(function (){
+            $("#remo1").remove();
+        })
+        //xoa tất cả các phần tử con trong phần tử đã đc  chọn .
+        $("#remove3").click(function (){
+            $("#remo").empty();
+        })
+        $("#remove4").click(function (){
+            $("div").remove();
+        })
+    })
+    function remove5(){
+        remove = document.getElementById("remo4");
+        remove.remove();
+    }
+    function remove6(){
+        remove1 = document.getElementById("remo5");
+        remove2 = document.getElementById("remo4");
+        remove1.remove()
+        remove2.remove()
+    }
+    function remove7(){
+        remove = document.getElementById("more")
+        remove.remove();
+    }
+
+
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="remove1">
+                Nhấn để xoá 2 phần tử có id khác nhau .
+            </button>
+            <button id="remove2">
+                Nhấn để xoá 1 phần tử id .
+            </button>
+            <button id="remove3">
+                Nhấn để xoá phần tử con của 1 phần tử  đã chọn .
+            </button>
+            <button id="remove4">
+                Nhấn để  xoá tất cả phần tử đã  chọn .
+            </button>
+            <button onclick="remove5()">
+                Nhấn để xoá 1 phần tử bên JS .
+            </button>
+            <button onclick="remove6()">
+                Nhấn để xoá 2 phần tử bên JS .
+            </button>
+            <button onclick="remove7()">
+                Nhấn để xoá tất cả  phần tử bên JS .
+            </button>
+        </div>
+        <div class="col-md-4">
+
+            <div id="remo" style="background-color: #1b6d85;width: 400px;height: 100px;margin-top: 20px;color: white">
+                <p id="remo1">What your name </p>
+                <p id="remo2">My name is gril</p>
+                <p id="remo3">This is a FPT</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div id="more" style="background-color: #1b6d85;color: white;margin-top: 20px;margin-left: 20px;width: 400px;height: 100px">
+                <p id="remo4">What your name </p>
+                <p id="remo5">My name is Boy</p>
+                <p id="remo6">This is a FPT</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    add classCSS
+</div>
+
+<!--addClass() - Thêm một hoặc nhiều lớp vào các phần tử đã chọn-->
+<!--removeClass() - Loại bỏ một hoặc nhiều lớp khỏi các phần tử đã chọn-->
+<!--toggleClass() - Chuyển đổi giữa việc thêm / xóa các lớp khỏi các phần tử đã chọn-->
+<!--css() - Đặt hoặc trả về thuộc tính style-->
+<style>
+    .blue{
+        color: #ffcc33;
+    }
+    .color{
+        color: red;
+    }
+    .size{
+        font-size: 30px;
+    }
+    .h1{
+        color: #ce4844;
+    }
+    .addclass_1{
+        background-color: #1b6d85;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+    .addclass_2{
+        color: #ce4844;
+        font-size: 30px;
+    }
+
+</style>
+<script>
+    $(document).ready(function (){
+        //thay đổi màu dòng 1
+        $("#addclass1").click(function (){
+            $("#add11").addClass("color")
+        })
+        //thay đổi màu dòng 1,2 thay đổi cỡ chữ dòng 2
+        $("#addclass2").click(function (){
+            $("#add11,#add22").addClass("colo r")
+            $("#add22").addClass("size")
+        })
+        //thay  đổi màu  sắc hơi khó .
+        $("#addclass3").click(function (){
+            $("#add3").removeClass("blue")
+        })
+        $("#addclass4").click(function (){
+            $("#add4").toggleClass("h1");
+        })
+    })
+    function addclass5(){
+        document.getElementById("addclass_1").classList.add("addclass_1")
+    }
+    function addclass6(){
+        document.getElementById("addclass_2").classList.remove("addclass_1")
+    }
+    function addclass7(){
+        document.getElementById("addclass_3").classList.toggle("addclass_2")
+    }
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="addclass1">
+                Nhấn để tha đổi  dòng 1
+            </button>
+            <button id="addclass2">
+                Nhấn để thay đổi dòng 1,2
+            </button>
+
+            <button id="addclass3">
+                Nhấn để thay đổi  về màu cũ .
+            </button>
+            <button id="addclass4">
+                Thay đổi 2 chiều .
+            </button>
+            <button onclick="addclass5()">
+                Nhấn để thay đổi màu sắc dòng 1 bên JS.
+            </button>
+            <button onclick="addclass6()">
+                Nhấn để xoá màu chữ bên JS
+            </button>
+            <button onclick="addclass7()">
+                2 chiều thay đổi bên JS .
+            </button>
+
+
+        </div>
+        <div class="col-md-4">
+
+            <h5 id="add11">This is a H5</h5>
+            <h4 id="add22">This is a h4</h4>
+            <h3 id="add3" class="blue">This is a h3</h3>
+            <h1 id="add4">BETTER SALER </h1>
+        </div>
+
+        <div class="col-md-4">
+            <div>
+                <p id="addclass_1">this is a cake</p>
+                <p id="addclass_2" class="addclass_1" >this is a cake</p>
+                <p id="addclass_3">this is a cake</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+
+
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Dimensions
+</div>
+<script>
+    $(document).ready(function (){
+        $("#Dimensions1").click(function (){
+            // Trả về giá trị chiều thuần của chiều cao , độ rộng .
+            var x="";
+            x+="Độ rộng of Id Dimensions_1:" +$("#Dimensions_1").width() +"</br>";
+            x+="Độ dài of Id Dimensions_1 :"+ $("#Dimensions_1").height();
+            $("#Dimensions_1").html(x);
+        })
+        //Trả về chiều cao và độ rộng bao gồm yếu tố bên ngoài .
+        $("#Dimensions2").click(function (){
+            var y="";
+            y+="Độ rộng of Id Dimensions_1:" +$("#Dimensions_1").width() +"</br>";
+            y+="Độ dài of Id Dimensions_1 :"+ $("#Dimensions_1").height()+"</br>";
+            y+="Độ rộng có tác động bên ngoài :"+$("#Dimensions_1").innerWidth()+ "</br>";
+            y+="Độ dài có tác động bên ngoài :"+$("#Dimensions_1").innerHeight();
+            $("#Dimensions_1").html(y);
+
+            $("#Dimensions_1").html(y);
+        })
+        //Trả về chiều rộng vào chiều cao lên trên của sổ cảnh báo .
+        $("#Dimensions3").click(function (){
+            var c="";
+            c+="Chiều rộng và chiều cao của id Dimensions_1 :"+ $("#Dimensions_1").width()+"x"+$("#Dimensions_1").height() ;
+            c+="Chiều rộng và chiều cao của màn hình là :"+$(window).width()+"x"+$(window).height();
+            alert(c)
+        })
+        //Định dạnh lại độ rộng vào chiều cao .
+        $("#Dimensions4").click(function (){
+            $("#Dimensions_1").width(600).height(500);
+        })
+
+    })
+
+</script>
+<style>
+    #Dimensions_1{
+        color: whitesmoke;
+        margin-top: 20px;
+        background-color: #1b6d85;
+        width: 500px;
+        height: 200px;
+        border: 1px solid #0f0f0f;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="Dimensions1">
+                Chiều cao và chiều rộng thuần của khối đó là .
+            </button>
+            <button id="Dimensions2">
+                Chiều cao và chiều rộng bao gồm yếu tố bên ngoài tác động của khối đó là .
+            </button>
+            <button id="Dimensions3">
+                Cửa sổ cảnh báo !!!
+            </button>
+            <button id="Dimensions4">
+                Nhấn vào để làm chiều rộng , cao dài ra .
+            </button>
+        </div>
+        <div class="col-md-4"><div id="Dimensions_1"></div>
+
+        <div class="col-md-4"></div>
+    </div>
+</div>
+</div>
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+
+<div class="jQuery Effects" style="color: #1b6d85;font-size: 40px">
+    jQuery Travarsing  .
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Ancestors .
+</div>
+
+<script>
+    $(document).ready(function (){
+        //Trả về giá trị cha của span .
+        $("#ancestors1").click(function (){
+            $("#Ancestors2_5").css({"background-color":"red"})
+            $("#Ancestors2_5").parent().css({"color": "red", "border": "2px solid red","background-color":"gold"});
+        })
+        $("#Ancestors2").click(function (){
+            $("#Ancestors2_5").parents().css({"color": "red", "border": "2px solid red"})
+        })
+        $("#Ancestors3").click(function (){
+            $("#Ancestors2_5").parentsUntil("#Ancestors2_2").css({"color": "red", "border": "2px solid red",});
+        })
+    })
+</script>
+
+
+<style>
+    .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="ancestors1">
+                Trả về giá trị cha của span.
+            </button>
+            <button id="Ancestors2">
+                Trả về tất cả các giá trị trên span .
+            </button>
+            <button id="Ancestors3">
+                Trả về các giá trị ở giữa Span Và
+            </button>
+        </div>
+        <div class="col-md-4">
+            <div id="Ancestors2_1" class="ancestors">
+                <div id="Ancestors2_2" style="width:500px;">div (great-grandparent)
+                    <ul id="Ancestors2_3">ul (grandparent)
+                        <li id="Ancestors2_4">li (direct parent)
+                            <span id="Ancestors2_5">span</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+</div>
+
+
+<div class="gach" style="border-bottom: 1px solid black;margin-top: 20px">
+</div>
+<div class=" Hide and hideshow" style="font-size: 20px;color: #ce4844">
+    Ancestors .
+</div>
+
+<script>
+    $(document).ready(function (){
+        $("#descendants1").click(function (){
+            $("#descendants_3").children().css({"border": "2px solid red"})
+        })//cais nayd chuwa lamf dc
+        $("#descendants2").click(function (){
+            $("#descendants_4").children("#descendants_4").css({"border": "2px solid red"})
+        })
+
+        $("#descendants3").click(function (){
+            $("#descendants_1").find("#descendants_4").css({"border": "2px solid red"})
+        })
+        //Trả về phàn tử tất cả .
+        $("#descendants4").click(function (){
+            $("#descendants_2").find("*").css({"border": "2px solid red"})
+        })
+
+    })
+</script>
+
+
+
+<style>
+    .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+
+            <button id="descendants1">
+                Thay đổi màu của dưới ul .
+            </button>
+            <button id="descendants2">
+                Cais nay chua lamf dc
+            </button>
+            <button id="descendants3">
+                Dổi màu thẻ cuối .
+            </button>
+            <button id="descendants4">
+                Đổi màu tất cả trong li .
+            </button>
+        </div>
+        <div class="col-md-4">
+            <div id="descendants_1" class="ancestors">
+                <div id="descendants_2" style="width:500px;">div (great-grandparent)
+                    <ul id="descendants_3">ul (grandparent)
+                        <li id="descendants_4">li (direct parent)
+                            <span id="y1">span</span>
+                        </li>
+                        <li id="descendants_4_2">
+                <span>
+                    span
+                </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+</div>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+</div>
