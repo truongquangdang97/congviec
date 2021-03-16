@@ -614,12 +614,8 @@ Selector
                 show2
             </button>
             <button onclick="callback_3()">
-                show3
+                show3 in JS
             </button>
-            <button onclick="callback_4()">
-                show4
-            </button>
-
         </div>
         <div class="col-md-4">
             <div id="callback3">
@@ -632,7 +628,13 @@ Selector
                 Biến mất và xuất hiện cảnh báo !!!
             </div>
             <script>
-                callback =
+                callback = document.getElementById("callback4")
+
+                function callback_3(){
+                    callback.remove("callback4")
+                    callback=document.getElementById("callback4").innerText=alert("co virut")
+                }
+
             </script>
         </div>
 
