@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/test9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="page-body">
+<header class='page-header'>
+
+</header>
+<div>
+    <main>
+        <button type="button" class="js-insert btn btn-primary">add</button>
+        <button type="button" class="js-delete btn btn-danger">Delete</button>
+
+        <form class='form js-form'>
+            <h2 class="form-title"> Add new schools </h2>
+            <input class='form-id hidden' type='text'/>
+            <div class="form-group">
+                <label class='form-label'>Code:</label>
+                <input class='form-input form-name' type='text' required/>
+            </div>
+            <div class="form-group">
+                <label class='form-label'>Name:</label>
+                <input class='form-input form-surname' type='text' required/>
+            </div>
+            <div class="form-group">
+                <label class='form-label'>Province:</label>
+                <select class="form-select form_phone " aria-label="Default select example">
+                    <option value="1">Hà nội</option>
+                    <option value="2">HCM</option>
+                    <option value="3">QN</option>
+                </select>
+
+            </div>
+            <button type="submit" class="js-submit btn btn-primary" data-state="add">Submit</button>
+            <button type="button" class="js-cancel btn btn-danger">Cancel</button>
+        </form>
+
+        <div class='form-overlay js-form-overlay'></div>
+
+        <div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Province</th>
+                    <th></th>
+                    <th class="delete-row"></th>
+                </tr>
+                </thead>
+                <tbody class="contact-list">
+                <tr class="contact">
+                    <td class="td-id">1</td>
+                    <td class="td-name">001</td>
+                    <td class="td-surname">Trường HHT</td>
+                    <td class="td-phone">hà nội</td>
+                    <td class="edit-row" onclick="EditRow($(this))"><span class="glyphicon glyphicon-edit"></span></td>
+                    <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+                </tr>
+                <tr class="contact">
+                    <td class="td-id">2</td>
+                    <td class="td-name">002</td>
+                    <td class="td-surname">Trường HQV</td>
+                    <td class="td-phone">hà nội</td>
+                    <td class="edit-row" onclick="EditRow($(this))"><span class="glyphicon glyphicon-edit"></span></td>
+                    <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+                </tr>
+                <tr class="contact">
+                    <td class="td-id">3</td>
+                    <td class="td-name">003</td>
+                    <td class="td-surname">Trường THD</td>
+                    <td class="td-phone" >HCM</td>
+                    <td class="edit-row" onclick="EditRow($(this))"><span class="glyphicon glyphicon-edit"></span></td>
+                    <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script>
+    let schools = [{
+        code_field: '001',
+        name: "Trường HHT",
+        phone: "09888888",
+        address: "no",
+        id_province: ""
+    }, {
+        code_field: '002',
+        name: "Trường HQV",
+        phone: "09888888",
+        address: "null",
+        id_province: ""
+
+    },
+        {
+            code_field: "Trường THD",
+            price: 10000,
+            phone: "09888888",
+            address: "NaN",
+            id_province: "",
+        },];
+
+    let province = [{
+        id: "1",
+        name_Province: "hà nội"
+    },{
+        id: "2",
+        name_Province: "HCM"
+    },{
+        id: "3",
+        name_Province: "QN"
+    },]
+
+    //tạo bảng mới
+    $(document).ready(function() {
+        /**
+         *  Display a form to add new contact
+         */
+        $('.js-insert').on('click', function(event) {
+            event.preventDefault();
+            $('.js-form').toggleClass('is-visible');
+            $('.form-title').text('Add new contact');
+            $('.js-submit').attr('data-state', 'add');
+            $('.delete-row').removeClass('is-visible');
+            $('.js-form-overlay').addClass('is-visible');
+        });
+
+        /**
+         * Display delete column
+         */
+        $('.js-delete').on('click', function(event) {
+            event.preventDefault();
+            $('.delete-row').toggleClass('is-visible');
+            $('.js-form').removeClass('is-visible');
+        });
+
+        /**
+         * Delete row
+         */
+        $('.contact-list').on('click', '.delete-row', function(event) {
+            event.preventDefault();
+            $(this).closest('.contact').remove();
+        });
+
+        /**
+         * Form submit button event
+         */
+        $('.js-form').submit(function(event) {
+            event.preventDefault();
+
+            var id = parseInt($('.contact-list tr:last').find('.td-id').text()) + 1;
+            if(isNaN(id))
+                id = 1;
+
+            var state = $('.js-submit').attr('data-state');
+            if(state == 'add') {
+                var htmlElement = `<tr class="contact">
+                                       <td class="td-id">${id}</td>
+                                       <td class="td-name">${$('.form-name').val()}</td>
+                                       <td class="td-surname">${$('.form-surname').val()}</td>
+                                       <td class="td-phone">${$('.form-phone').val()}</td>
+                                       <td class="edit-row" onclick="EditRow($(this))"><span class="glyphicon glyphicon-edit"></span></td>
+                                       <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+                                   </tr>`;
+
+                $('.contact-list').append(htmlElement);
+            }
+            else {
+                debugger;
+                $('.contact-list tr').find('.td-id').each(function (i, el) {
+                    debugger;
+                    var me = $(this);
+                    if(me.text() == $('.form-id').val())
+                    {
+                        me.closest('.contact').find('.td-name').text($('.form-name').val());
+                        me.closest('.contact').find('.td-surname').text($('.form-surname').val());
+                        me.closest('.contact').find('.td-phone').text($('.form-phone').val());
+                    }
+                });
+            }
+
+            $(this).closest('form').find("input, textarea").val("");
+            $('.js-form').removeClass('is-visible');
+            $('.js-form-overlay').removeClass('is-visible');
+        });
+
+        /**
+         * Form cancel button event
+         */
+        $('.js-form').on('click', '.js-cancel', function(event) {
+            $(this).closest('form').find("input,select, textarea").val("");
+            $('.js-form').removeClass('is-visible');
+            $('.js-form-overlay').removeClass('is-visible');
+        });
+    });
+
+    /**
+     *  Display a form to add new contact
+     */
+    function EditRow(sender) {
+        var me = sender;
+
+        $('.js-form').toggleClass('is-visible');
+        $('.form-title').text('Edit contact')
+        $('.delete-row').removeClass('is-visible');
+        $('.js-form-overlay').addClass('is-visible');
+
+        $('.js-submit').attr('data-state', 'edit');
+
+        $('.form-id').val(me.closest('.contact').find('.td-id').text());
+        $('.form-name').val(me.closest('.contact').find('.td-name').text());
+        $('.form-surname').val(me.closest('.contact').find('.td-surname').text());
+        $('.form-phone').val(me.closest('.contact').find('.td-phone').text());
+    };
+</script>
+</body>
+</html>

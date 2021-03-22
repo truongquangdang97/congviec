@@ -6,7 +6,7 @@
 </head>
 
 <style>
-    #x1{
+    #Animate_1{
         text-align: center;
         margin: auto;
     }
@@ -14,11 +14,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        $("#next").click(function(){
-            $("#x1").animate({left: '250px'});
+        $("#animate_2").click(function(){
+            $("#Animate_1").animate({left: '250px'});
         });
-        $("#next2").click(function (){
-            $("#x1").animate(
+        $("#animate_3").click(function (){
+            $("#Animate_1").animate(
                 {
                     left:'250px',
                     width:'200px',
@@ -27,8 +27,8 @@
                 }
                 )
         })
-        $("#next3").click(function (){
-            $("#x1").animate(
+        $("#animate_4").click(function (){
+            $("#Animate_1").animate(
                 {
                     left:'250px',
                     width:'+=100px',
@@ -37,8 +37,8 @@
                 }
             )
         })
-        // $("#next4").click()(function (){
-        //     $("#x1").animated(
+        // $("#animate_24").click()(function (){
+        //     $("#Animate_1").animated(
         //         {
         //             left:'250px',
         //             // width:'=100px-',
@@ -48,16 +48,16 @@
         //         }
         //     )
         // })
-        $("#next5").click(function (){
-            $("#x1").animate({
+        $("#animate_5").click(function (){
+            $("#Animate_1").animate({
                 left:'toggle',
                 width:'toggle',
                 height:'toggle',
 
             })
         })
-        $("#next6").click(function (){
-            // $("#x1").animate(
+        $("#animate_6").click(function (){
+            // $("#Animate_1").animate(
             //     {
             //         left:'250px',
             //         width:'200px',
@@ -65,7 +65,7 @@
             //         opacity: '1,5'
             //     }
             // )
-            var showout = $("#x1")
+            var showout = $("#Animate_1")
             showout.animate({left: '300px'}, "slow");
             showout.animate({fontSize: '40px'}, "slow");
         })
@@ -78,20 +78,17 @@
 
 
 
-<button id="next" >Next</button>
-<button id="next2"> Nhấn để dịch chuyển và cho to hình ra </button>
-<button id="next3"> Nhấn để dịch chuyển và cho to hình ra theo cấp số nhân. </button>
-<!--<button id="next4"> Nhấn để dịch chuyển và cho nhỏ hình vào theo cấp số nhân. </button>-->
-
-
-
-<button id="next5" >Thu vào mở ra  </button>
-<button id="next6">Chữ chạy nhảy và to ra trên màn hình </button>
+<button id="animate_2" >Nhấn để hiện </button>
+<button id="animate_3"> Nhấn để dịch chuyển và cho to hình ra </button>
+<button id="animate_4"> Nhấn để dịch chuyển và cho to hình ra theo cấp số nhân. </button>
+<!--<button id="animate_24"> Nhấn để dịch chuyển và cho nhỏ hình vào theo cấp số nhân. </button>-->
+<button id="animate_5" >Thu vào mở ra  </button>
+<button id="animate_6">Chữ chạy nhảy và to ra trên màn hình </button>
 
 
 
 
-<div id="x1"style="background-color:gold  ;width: 100px;height: 100px;margin-top: 20px;position:absolute">Hello</div>
+<div id="Animate_1"style="background-color:gold  ;width: 100px;height: 100px;margin-top: 20px;position:absolute">Hello</div>
 <!--//chú ý : phải có position : absolute thì mới chạy đc .-->
 
 </body>

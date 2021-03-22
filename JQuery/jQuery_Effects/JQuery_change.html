@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <style>
-    #x1{
+    #chaining2{
         color: red;width: 300px;
         padding: 30px 0;
         background-color: #1b6d85;text-align: center;
@@ -17,8 +17,8 @@
 
 <script>
     $(document).ready(function (){
-        $("#inout").click(function (){
-            $("#x1").css("color","blue").slideToggle(2000);//slideUp(2000).slideDown(2000)
+        $("#chaining1").click(function (){
+            $("#chaining2").css("color","blue").slideToggle(2000);//slideUp(2000).slideDown(2000)
         })
     })
 
@@ -27,10 +27,10 @@
 <body>
 
 
-<div id="x1">
+<div id="chaining2">
     Cảnh báo !!!
 </div>
-<button id="inout">
+<button id="chaining1">
     Nhấn để tắt, bặt thông tin .
 </button>
 </body>

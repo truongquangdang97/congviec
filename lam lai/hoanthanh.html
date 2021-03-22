@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<style>
+    #withd{
+        width: 100%;
+        padding: 10%;
+    }
+</style>
+<div>
+    <input hidden="hidden" type="number" name="quang" id="quang" value="" >
+    <input type="text" placeholder="Id trường " id="id">
+    <input type="text" placeholder="mã trường" id="code">
+    <input type="text" placeholder="Tên trường" id="name">
+<!--    <input type="text" placeholder="Tên tỉnh" id="city">-->
+    <select name="" id="city" onchange="change()">
+        <option value="">Tên tỉnh </option>
+    </select>
+    <input type="text" placeholder="Số điện thoại" id="phone">
+    <input type="text" placeholder="Địa chỉ" id="adress">
+    <button id="" onclick="add()">Thêm </button>
+    <button onclick="seach()">Tìm kiếm </button>
+    <input type="text" id="tim">
+</div>
+<div id="zzz" style="margin-top: 20px">
+    <table id="withd">
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>Id</th>-->
+<!--            <th>Mẫ trường </th>-->
+<!--            <th>Tên trường </th>-->
+<!--            <th>Tỉnh </th>-->
+<!--            <th>Số điện thoại </th>-->
+<!--            <th>Địa chỉ </th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+    </table>
+    <div id="ouput">
+    </div>
+    <div id="m"></div>
+
+</div>
+<script>
+
+    var city={
+        "Ha Noi":0,
+        "HCM":0,
+        "Ca Mau":0
+    }
+    var tentinh= document.getElementById("city")
+    for (var ten in city){
+        tentinh.innerHTML +=`<option value="${ten}">${ten}</option>`
+    }
+
+    var list=[];
+
+
+
+
+    var count=0;
+    function add(){
+
+
+
+        var index = document.getElementById("quang").value;
+        var id=document.getElementById("id").value;
+        var code=document.getElementById("code").value;
+        var name=document.getElementById("name").value;
+        var city=document.getElementById("city").value;
+        var phone=document.getElementById("phone").value;
+        var adress=document.getElementById("adress").value;
+
+        var school={
+            "id":id,
+            "code":code,
+            "name":name,
+            "city":city,
+            "phone":phone,
+            "adress":adress,
+        }
+
+
+
+        if (index!=''){
+            list[index]=school
+            show()
+            return ;
+        }
+        list.push(school);
+        console.log(list)
+
+        document.getElementById("ouput").innerHTML +=`<tr>
+            <th>${++count}</th>
+            <th>${id}</th>
+            <th>${code} </th>
+            <th>${name} </th>
+            <th>${city}</th>
+            <th>${phone}</th>
+            <th>${adress}</th>
+            <button onclick="sua(${count-1})">edit</button>
+            <button onclick="xoa(${count-1})">delete</button>
+        </tr> </br>`
+
+    }
+
+    function xoa(index){
+        list.splice(index,1)
+        show()
+    }
+    function show(){
+        document.getElementById("ouput").innerHTML="";
+
+        for (var i=0;i<list.length;i++){
+            document.getElementById("ouput").innerHTML +=`<tr>
+            <th>${i+1}</th>
+            <th>${list[i].id}</th>
+            <th>${list[i].code} </th>
+            <th>${list[i].name} </th>
+            <th>${list[i].city}</th>
+            <th>${list[i].phone}</th>
+            <th>${list[i].adress}</th>
+            <button onclick="sua(${i})">edit</button>
+            <button onclick="xoa(${i})">delete</button>
+        </tr> </br>`
+        }
+    }
+
+    function sua(index){
+        console.log(index);
+        var end= list[index];
+        document.getElementById("quang").value=index;
+        document.getElementById("id").value=end.id;
+        document.getElementById("code").value=end.code;
+        document.getElementById("name").value=end.name;
+        document.getElementById("city").value=end.city;
+        document.getElementById("phone").value=end.phone;
+        document.getElementById("adress").value=end.adress;
+    }
+
+
+    function seach(){
+        alert("Thông tin tìm kiếm là sau khi nhấn enter ")
+        var check = document.getElementById("tim").value;
+        for (var i=0;i<list.length;i++){
+            if (check===list[i].name){
+                document.getElementById("m").innerHTML =`<tr>
+            <th>${list[i].id}</th>
+            <th>${list[i].code} </th>
+            <th>${list[i].name} </th>
+            <th>${list[i].city}</th>
+            <th>${list[i].phone}</th>
+            <th>${list[i].adress}</th>
+        </tr> </br>`
+            }
+        }
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

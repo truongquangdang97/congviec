@@ -7,39 +7,39 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        $("#show").click(function(){
-            $("#x1").fadeIn(500);
-            $("#x2").fadeIn(700);
-            $("#x3").fadeIn(1000);
+        $("#fade_1").click(function(){
+            $("#fade1").fadeIn(500);
+            $("#fade2").fadeIn(700);
+            $("#fade3").fadeIn(1000);
         });
-        $("#hide").click(function (){
-            $("#x1").fadeOut(500);
-            $("#x2").fadeOut(700);
-            $("#x3").fadeOut(1000);
+        $("#fade_2").click(function (){
+            $("#fade1").fadeOut(500);
+            $("#fade2").fadeOut(700);
+            $("#fade3").fadeOut(1000);
         })
-        $("#all").click(function (){
-            $("#x1").fadeToggle(500);
-            $("#x2").fadeToggle(700);
-            $("#x3").fadeToggle(1000);
+        $("#fade_3").click(function (){
+            $("#fade1").fadeToggle(500);
+            $("#fade2").fadeToggle(700);
+            $("#fade3").fadeToggle(1000);
         })
     });
 </script>
 
 <body>
-<button id="show">
+<button id="fade_1">
     show
 </button>
-<button id="hide">
+<button id="fade_2">
     hide
 </button>
-<button id="all">
+<button id="fade_3">
     all
 </button>
 
 
-<div id="x1" style="width: 100px;height:100px;background-color: #ff413a;margin-top: 20px;display:none"></div>
-<div id="x2" style="width: 100px;height:100px;background-color: #1b6d85;margin-top: 20px;display:none"></div>
-<div id="x3" style="width: 100px;height:100px;background-color: #ffcc33;margin-top: 20px;display:none"></div>
+<div id="fade1" style="width: 100px;height:100px;background-color: #ff413a;margin-top: 20px;display:none"></div>
+<div id="fade2" style="width: 100px;height:100px;background-color: #1b6d85;margin-top: 20px;display:none"></div>
+<div id="fade3" style="width: 100px;height:100px;background-color: #ffcc33;margin-top: 20px;display:none"></div>
 
 
 

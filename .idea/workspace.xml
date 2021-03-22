@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="baitap">
-      <change afterPath="$PROJECT_DIR$/HTML(dom)/html_1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML(dom)/html_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML(dom)/html_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML(dom)/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Dimesions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Remove.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Set.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_app.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_css_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/HIde_Show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Callback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Slide.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_change.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_stop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/Jquery_Animate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/jQuery_fade.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Tutoria/JQuery_even.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Tutoria/JQuery_selector.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jscript/project_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jscript/project_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jscript/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jscript/test_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Object/Object_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Object/Object_2.html" afterDir="false" />
+    <list default="true" id="e4eb6695-bc3f-41c2-b48b-dea78b8c237f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Traversing/JQuery_Ancestors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jQuery_Traversing/JQuery_Descendants.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jscript/okok.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TongHop/Tú.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TongHop/kiemtra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TongHop/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gambari/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gambari/truong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gambari/truong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lam lai/hoanthanh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ok/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ok/html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ok/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/truonghoc/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/truonghoc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/truonghoc/ok.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/truonghoc/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/truonghoc/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuan/Tuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuan/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuan/js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuan/js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jscript/project_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jscript/project_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jscript/project_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jscript/project_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jscript/project_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jscript/project_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baitap js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css2/bai2.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2/bai2.1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai2.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai3.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai4.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai5.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai6.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai7.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2/bai8.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Dimesions.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Dimesions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Get.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Get.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Remove.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Remove.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Set.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_Set.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_app.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_css_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/JQuery_HTML/JQuery_css_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Callback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Slide.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_Slide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_change.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_stop.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/JQuery_stop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/jQuery_Effects/Jquery_Animate.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/Jquery_Animate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JQuery/jQuery_Effects/jQuery_fade.html" beforeDir="false" afterPath="$PROJECT_DIR$/JQuery/jQuery_Effects/jQuery_fade.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -68,7 +67,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/photo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/truonghoc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -81,12 +80,42 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gambari" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/truonghoc" />
       <recent name="$PROJECT_DIR$/photo" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager" selected="Node.js.truong.js">
+    <configuration name="TongHop.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/congviec/TongHop/TongHop.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/congviec/truonghoc/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/congviec/TongHop/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="truong.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/congviec/gambari/truong.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="truong.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/gambari/truong.js" working-dir="$PROJECT_DIR$/gambari">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.truong.js" />
+        <item itemvalue="JavaScript Debug.truong.html" />
+        <item itemvalue="JavaScript Debug.test.html (1)" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.TongHop.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -164,7 +193,23 @@
       <workItem from="1613966046104" duration="52000" />
       <workItem from="1615254590925" duration="20789000" />
       <workItem from="1615346671030" duration="10003000" />
-      <workItem from="1615427610579" duration="283000" />
+      <workItem from="1615427610579" duration="14678000" />
+      <workItem from="1615567461966" duration="1581000" />
+      <workItem from="1615569321063" duration="3333000" />
+      <workItem from="1615601492515" duration="6483000" />
+      <workItem from="1615794605543" duration="4036000" />
+      <workItem from="1615801386575" duration="5436000" />
+      <workItem from="1615815076020" duration="10717000" />
+      <workItem from="1615857741837" duration="5096000" />
+      <workItem from="1615961766887" duration="41500000" />
+      <workItem from="1616211077304" duration="11750000" />
+      <workItem from="1616242190480" duration="4926000" />
+      <workItem from="1616293354519" duration="7360000" />
+      <workItem from="1616312452373" duration="6665000" />
+      <workItem from="1616340605455" duration="4156000" />
+      <workItem from="1616376205221" duration="596000" />
+      <workItem from="1616384257067" duration="758000" />
+      <workItem from="1616387816886" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="bai1">
       <created>1608777306892</created>
@@ -222,7 +267,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611029290984</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="JQuery">
+      <created>1615428641996</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615428641996</updated>
+    </task>
+    <task id="LOCAL-00010" summary="JQuery">
+      <created>1615860226370</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615860226370</updated>
+    </task>
+    <task id="LOCAL-00011" summary="JQuery">
+      <created>1615862610542</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615862610542</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,9 +299,18 @@
     <MESSAGE value="bai2" />
     <MESSAGE value="baitap1" />
     <MESSAGE value="baitap" />
-    <option name="LAST_COMMIT_MESSAGE" value="baitap" />
+    <MESSAGE value="JQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="JQuery" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="354" y="107" key="#Inspections" timestamp="1615975705029">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state x="354" y="107" key="#Inspections/0.23.1440.794@0.23.1440.794" timestamp="1615975705029" />
+    <state x="501" y="198" key="#Web_Browsers" timestamp="1615996006803">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state x="501" y="198" key="#Web_Browsers/0.23.1440.794@0.23.1440.794" timestamp="1615996006803" />
     <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610977755170">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
@@ -249,13 +324,15 @@
     <state x="454" y="229" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.794@0.23.1440.794" timestamp="1611975479964" />
     <state x="454" y="230" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.798@0.23.1440.798" timestamp="1610162321055" />
     <state x="454" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.804@0.23.1440.804" timestamp="1609344593001" />
-    <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609984685018">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state x="458" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616048266559">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
+    <state x="458" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.794@0.23.1440.794" timestamp="1616048266559" />
     <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.804@0.23.1440.804" timestamp="1609984685018" />
-    <state x="0" y="23" width="828" height="797" key="CommitChangelistDialog2" timestamp="1611029290644">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="0" y="23" width="832" height="794" key="CommitChangelistDialog2" timestamp="1615862610291">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
+    <state x="0" y="23" width="832" height="794" key="CommitChangelistDialog2/0.23.1440.794@0.23.1440.794" timestamp="1615862610291" />
     <state x="0" y="23" width="828" height="797" key="CommitChangelistDialog2/0.23.1440.797@0.23.1440.797" timestamp="1610898402849" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.798@0.23.1440.798" timestamp="1611029290644" />
     <state x="0" y="23" width="828" height="801" key="CommitChangelistDialog2/0.23.1440.801@0.23.1440.801" timestamp="1610014034803" />
@@ -264,13 +341,62 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="144" y="92" key="DiffContextDialog/0.23.1440.804@0.23.1440.804" timestamp="1608777126806" />
-    <state x="221" y="59" key="SettingsEditor" timestamp="1615254637244">
+    <state width="1419" height="11" key="GridCell.Tab.0.bottom" timestamp="1616235749425">
       <screen x="0" y="23" width="1440" height="794" />
     </state>
-    <state x="221" y="59" key="SettingsEditor/0.23.1440.794@0.23.1440.794" timestamp="1615254637244" />
-    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611029293315">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1419" height="11" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1616235749425" />
+    <state width="1419" height="11" key="GridCell.Tab.0.center" timestamp="1616235749425">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
+    <state width="1419" height="11" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1616235749425" />
+    <state width="1419" height="11" key="GridCell.Tab.0.left" timestamp="1616235749424">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="11" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1616235749424" />
+    <state width="1419" height="11" key="GridCell.Tab.0.right" timestamp="1616235749425">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="11" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1616235749425" />
+    <state width="1419" height="203" key="GridCell.Tab.1.bottom" timestamp="1615827676400">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="203" key="GridCell.Tab.1.bottom/0.23.1440.794@0.23.1440.794" timestamp="1615827676400" />
+    <state width="1419" height="203" key="GridCell.Tab.1.center" timestamp="1615827676400">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="203" key="GridCell.Tab.1.center/0.23.1440.794@0.23.1440.794" timestamp="1615827676400" />
+    <state width="1419" height="203" key="GridCell.Tab.1.left" timestamp="1615827676399">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="203" key="GridCell.Tab.1.left/0.23.1440.794@0.23.1440.794" timestamp="1615827676399" />
+    <state width="1419" height="203" key="GridCell.Tab.1.right" timestamp="1615827676400">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="203" key="GridCell.Tab.1.right/0.23.1440.794@0.23.1440.794" timestamp="1615827676400" />
+    <state width="1419" height="103" key="GridCell.Tab.2.bottom" timestamp="1615827676376">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="103" key="GridCell.Tab.2.bottom/0.23.1440.794@0.23.1440.794" timestamp="1615827676376" />
+    <state width="1419" height="103" key="GridCell.Tab.2.center" timestamp="1615827676376">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="103" key="GridCell.Tab.2.center/0.23.1440.794@0.23.1440.794" timestamp="1615827676376" />
+    <state width="1419" height="103" key="GridCell.Tab.2.left" timestamp="1615827676376">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="103" key="GridCell.Tab.2.left/0.23.1440.794@0.23.1440.794" timestamp="1615827676376" />
+    <state width="1419" height="103" key="GridCell.Tab.2.right" timestamp="1615827676376">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state width="1419" height="103" key="GridCell.Tab.2.right/0.23.1440.794@0.23.1440.794" timestamp="1615827676376" />
+    <state x="221" y="59" key="SettingsEditor" timestamp="1615861326638">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state x="221" y="59" key="SettingsEditor/0.23.1440.794@0.23.1440.794" timestamp="1615861326638" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1615862614362">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.23.1440.794@0.23.1440.794" timestamp="1615862614362" />
     <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1610605964446" />
     <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.798@0.23.1440.798" timestamp="1611029293315" />
     <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.801@0.23.1440.801" timestamp="1610014082069" />
@@ -287,9 +413,10 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="385" y="192" key="run.anything.popup/0.23.1440.804@0.23.1440.804" timestamp="1609850919689" />
-    <state x="385" y="147" width="670" height="675" key="search.everywhere.popup" timestamp="1611029748637">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="385" y="146" width="670" height="672" key="search.everywhere.popup" timestamp="1616313530818">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
+    <state x="385" y="146" width="670" height="672" key="search.everywhere.popup/0.23.1440.794@0.23.1440.794" timestamp="1616313530818" />
     <state x="385" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1610613124187" />
     <state x="385" y="147" width="670" height="675" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1611029748637" />
     <state x="385" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1609170923958" />

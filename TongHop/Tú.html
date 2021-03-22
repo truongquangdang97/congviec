@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<style>
+
+    .test2 {
+        height: 150px;
+        background-color: darkcyan;
+        margin: 20px 0 20px 0;
+    }
+    .slide-up{
+        height: 0;
+        transition-duration: 3s;
+    }
+    .slide-down{
+        height: 150px;
+        transition-duration: 3s;
+    }
+</style>
+
+<body>
+<div class="result">
+    <div class="test2 slide-up" id="test2">
+        <b>tu</b>
+    </div>
+</div>
+<div class="but">
+    <button id="button13" onclick="chaining()">Chainning</button>
+</div>
+</body>
+<script>
+    t2 = document.getElementById("test2");
+    function slideToggle(){
+        t2.classList.toggle("slide-down");
+        t2.classList.toggle("slide-up");
+    }
+    function chaining(){
+        t2.style.color = "yellow";
+        t2.getAttribute(slideToggle());
+        t2.style.backgroundColor = "gray"
+    }
+</script>
+</html>

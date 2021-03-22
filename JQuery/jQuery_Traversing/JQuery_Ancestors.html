@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        //Trả về giá trị cha của span .
+        $("#ancestors1").click(function (){
+            $("#Ancestors2_5").css({"background-color":"red"})
+            $("#Ancestors2_5").parent().css({"color": "red", "border": "2px solid red","background-color":"gold"});
+        })
+        $("#Ancestors2").click(function (){
+            $("#Ancestors2_5").parents().css({"color": "red", "border": "2px solid red"})
+        })
+        $("#Ancestors3").click(function (){
+            $("#Ancestors2_5").parentsUntil("#Ancestors2_2").css({"color": "red", "border": "2px solid red",});
+        })
+    })
+</script>
+
+
+<style>
+    .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<body>
+<div id="Ancestors2_1" class="ancestors">
+    <div id="Ancestors2_2" style="width:500px;">div (great-grandparent)
+        <ul id="Ancestors2_3">ul (grandparent)
+            <li id="Ancestors2_4">li (direct parent)
+                <span id="Ancestors2_5">span</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+</body>
+<button id="ancestors1">
+    Trả về giá trị cha của span.
+</button>
+<button id="Ancestors2">
+    Trả về tất cả các giá trị trên span .
+</button>
+<button id="Ancestors3">
+    Trả về các giá trị ở giữa Span Và
+</button>
+
+</html>

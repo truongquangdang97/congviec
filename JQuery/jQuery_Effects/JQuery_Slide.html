@@ -8,14 +8,14 @@
 
 <script>
     $(document).ready(function (){
-        $("#show").click(function (){
-            $("#tv").slideDown(500);
+        $("#slide").click(function (){
+            $("#slide_1").slideDown(500);
         })
-        $("#hide").click(function (){
-            $("#tv").slideUp(500)
+        $("#slide2").click(function (){
+            $("#slide_1").slideUp(500)
         })
-        $("#all").click(function (){
-            $("#tv").slideToggle(500);
+        $("#slide3").click(function (){
+            $("#slide_1").slideToggle(500);
         })
     })
 
@@ -23,13 +23,13 @@
 
 
 <style>
-    #tv,#show,#hide,#all{
+    #slide_1,#slide,#slide2,#slide3{
         padding: 5px;
         text-align: center;
         background-color: #e5eecc;
         border: solid 1px #c3c3c3;
     }
-    #tv{
+    #slide_1{
         display: none;
         margin-top: 20px;
         padding: 40px;
@@ -37,17 +37,17 @@
 </style>
 
 <body>
-<button id="show">
+<button id="slide">
     show
 </button>
-<button id="hide">
+<button id="slide2">
     hide
 </button>
-<button id="all">
+<button id="slide3">
     all
 </button>
 
-<div id="tv">
+<div id="slide_1">
     hello xin chao!!!
 </div>
 </body>

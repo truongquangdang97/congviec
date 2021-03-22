@@ -1,0 +1,68 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body onload="renderStudent()" onkeypress="pressSave(event)">
+<div class="container">
+    <h2>ADD STUDENT</h2>
+    <input type="hidden" id="index">
+
+    <input id="male" type="radio" value="male" name="gender"> <span>Male</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="female" type="radio" value="female" name="gender"> <span>Female</span>
+    <div class="error" id="errorGender"></div>
+
+    <input id="name" class="input" type="text" placeholder="name">
+    <div class="error" id="errorName"></div>
+
+    <input id="email" class="input" type="email" placeholder="email">
+    <div class="error" id="errorEmail"></div>
+
+    <input id="phone" class="input" type="text" placeholder="phone">
+    <div class="error" id="errorPhone"></div>
+
+    <input id="address" class="input" type="text" placeholder="address">
+    <div class="error" id="errorAdd"></div>
+
+    <input id="dob" class="input" type="date" placeholder="dob">
+    <div class="error" id="errorDob"></div>
+
+    <button id="saveBtn" onclick="saveStudent()" style="display: block">Save Student</button>
+    <button id="changeBtn" onclick="changeStudent()">Update Student</button>
+</div>
+
+<table id="tableContent" width="1200" cellspacing="0" cellpadding="0"><tbody><tr>
+    <th>id</th>
+    <th>name</th>
+    <th>gender</th>
+    <th>email</th>
+    <th>phone</th>
+    <th>address</th>
+    <th>dob</th>
+    <th>action</th>
+</tr><tr>
+    <td align="center">0</td>
+    <td>quang</td>
+    <td>female</td>
+    <td>quangtdth2008005@fpt.edu.vn</td>
+    <td>+818010291368</td>
+    <td>103syato sakurajosui</td>
+    <td>2021-03-19</td>
+    <td align="center"><a onclick="editStudent(0)" href="#">edit</a> / <a onclick="deleteStudent(0)" href="#">delete</a></td>
+</tr><tr>
+    <td align="center">1</td>
+    <td>hung</td>
+    <td>male</td>
+    <td>truongquangdang97@gmail.com</td>
+    <td>0</td>
+    <td>ưef</td>
+    <td>2021-03-13</td>
+    <td align="center"><a onclick="editStudent(1)" href="#">edit</a> / <a onclick="deleteStudent(1)" href="#">delete</a></td>
+</tr></tbody></table>
+<script src="js.js"></script>
+
+</body></html>

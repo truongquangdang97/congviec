@@ -7,41 +7,41 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function (){
-        $("#show1").click(function (){
+        $("#Dimensions1").click(function (){
             // Trả về giá trị chiều thuần của chiều cao , độ rộng .
             var x="";
-            x+="Độ rộng of Id x1:" +$("#x1").width() +"</br>";
-            x+="Độ dài of Id x1 :"+ $("#x1").height();
-            $("#x1").html(x);
+            x+="Độ rộng of Id Dimensions_1:" +$("#Dimensions_1").width() +"</br>";
+            x+="Độ dài of Id Dimensions_1 :"+ $("#Dimensions_1").height();
+            $("#Dimensions_1").html(x);
         })
         //Trả về chiều cao và độ rộng bao gồm yếu tố bên ngoài .
-        $("#show2").click(function (){
+        $("#Dimensions2").click(function (){
             var y="";
-            y+="Độ rộng of Id x1:" +$("#x1").width() +"</br>";
-            y+="Độ dài of Id x1 :"+ $("#x1").height()+"</br>";
-            y+="Độ rộng có tác động bên ngoài :"+$("#x1").innerWidth()+ "</br>";
-            y+="Độ dài có tác động bên ngoài :"+$("#x1").innerHeight();
-            $("#x1").html(y);
+            y+="Độ rộng of Id Dimensions_1:" +$("#Dimensions_1").width() +"</br>";
+            y+="Độ dài of Id Dimensions_1 :"+ $("#Dimensions_1").height()+"</br>";
+            y+="Độ rộng có tác động bên ngoài :"+$("#Dimensions_1").innerWidth()+ "</br>";
+            y+="Độ dài có tác động bên ngoài :"+$("#Dimensions_1").innerHeight();
+            $("#Dimensions_1").html(y);
 
-            $("#x1").html(y);
+            $("#Dimensions_1").html(y);
         })
         //Trả về chiều rộng vào chiều cao lên trên của sổ cảnh báo .
-        $("#show3").click(function (){
+        $("#Dimensions3").click(function (){
             var c="";
-            c+="Chiều rộng và chiều cao của id x1 :"+ $("#x1").width()+"x"+$("#x1").height() ;
+            c+="Chiều rộng và chiều cao của id Dimensions_1 :"+ $("#Dimensions_1").width()+"x"+$("#Dimensions_1").height() ;
             c+="Chiều rộng và chiều cao của màn hình là :"+$(window).width()+"x"+$(window).height();
             alert(c)
         })
         //Định dạnh lại độ rộng vào chiều cao .
-        $("#show4").click(function (){
-            $("#x1").width(600).height(500);
+        $("#Dimensions4").click(function (){
+            $("#Dimensions_1").width(600).height(500);
         })
 
     })
 
 </script>
 <style>
-    #x1{
+    #Dimensions_1{
         color: whitesmoke;
         margin-top: 20px;
         background-color: #1b6d85;
@@ -51,20 +51,20 @@
     }
 </style>
 <body>
-<button id="show1">
+<button id="Dimensions1">
     Chiều cao và chiều rộng thuần của khối đó là .
 </button>
-<button id="show2">
+<button id="Dimensions2">
     Chiều cao và chiều rộng bao gồm yếu tố bên ngoài tác động của khối đó là .
 </button>
-<button id="show3">
+<button id="Dimensions3">
     Cửa sổ cảnh báo !!!
 </button>
-<button id="show4">
+<button id="Dimensions4">
     Nhấn vào để làm chiều rộng , cao dài ra .
 </button>
 
-<div id="x1">
+<div id="Dimensions_1">
 
 </div>
 </body>

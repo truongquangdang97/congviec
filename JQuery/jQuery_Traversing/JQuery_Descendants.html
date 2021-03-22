@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#descendants1").click(function (){
+            $("#descendants_3").children().css({"border": "2px solid red"})
+        })//cais nayd chuwa lamf dc
+        $("#descendants2").click(function (){
+            $("#descendants_4").children("#descendants_4").css({"border": "2px solid red"})
+        })
+
+        $("#descendants3").click(function (){
+            $("#descendants_1").find("#descendants_4").css({"border": "2px solid red"})
+        })
+        //Trả về phàn tử tất cả .
+        $("#descendants4").click(function (){
+            $("#descendants_2").find("*").css({"border": "2px solid red"})
+        })
+
+    })
+</script>
+<body>
+<div id="descendants_1" class="ancestors">
+    <div id="descendants_2" style="width:500px;">div (great-grandparent)
+        <ul id="descendants_3">ul (grandparent)
+            <li id="descendants_4">li (direct parent)
+                <span id="y1">span</span>
+            </li>
+            <li id="descendants_4_2">
+                <span>
+                    span
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+
+
+<button id="descendants1">
+    Thay đổi màu của dưới ul .
+</button>
+<button id="descendants2">
+    Cais nay chua lamf dc
+</button>
+<button id="descendants3">
+    Dổi màu thẻ cuối .
+</button>
+<button id="descendants4">
+    Đổi màu tất cả trong li .
+</button>
+
+
+
+</body>
+</html>

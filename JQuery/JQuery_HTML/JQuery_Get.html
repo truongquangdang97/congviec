@@ -6,7 +6,7 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
-    #x1{
+    #get1{
         background-color: #1b6d85;
         color: #dbdbdb;
         width: 300px;
@@ -17,16 +17,16 @@
 </style>
 <script>
     $(document).ready(function (){
-        $("#showtext").click(function(){
-            alert("Text: " + $("#x1").text());
+        $("#getText").click(function(){
+            alert("Text: " + $("#get1").text());
         });
-        $("#showHTML").click(function(){
-            alert("HTML: " + $("#x1").html());
+        $("#getHTML").click(function(){
+            alert("HTML: " + $("#get1").html());
         });
-        $("#showVal").click(function(){
-            alert("Value: " + $("#x2").val());
+        $("#getVal").click(function(){
+            alert("Value: " + $("#get2").val());
         });
-        $("#showLink").click(function (){
+        $("#getLink").click(function (){
             alert($("#x3").attr("href"))
         })
     })
@@ -35,24 +35,24 @@
 
 
 <body>
-<button id="showtext">
-    Showtext
+<button id="getText">
+    Show Text
 </button>
-<button id="showHTML">
-    ShowHTML
+<button id="getHTML">
+    Show HTML
 </button>
-<button id="showVal">
-    ShowVal
+<button id="getVal">
+    Show Val
 </button>
-<button id="showLink">
-    ShowLink
+<button id="getLink">
+    Show Link
 </button>
 
 
-<div id="x1">
+<div id="get1">
     Thủ đô Hà Nội <Span></Span> Thành Phố Hồ Chí Minh
 </div>
-<p>Name: <input type="text" id="x2" value=" Và thế là hết !!!"></p>
+<p>Name: <input type="text" id="get2" value=" Và thế là hết !!!"></p>
 
 <p><a href="https://www.youtube.com/" id="x3">Youtube</a></p>
 

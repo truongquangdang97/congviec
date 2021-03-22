@@ -8,24 +8,24 @@
 <script>
     $(document).ready(function (){
         //Thêm vào đầu câu thì  dùng append .
-        $("#show1").click(function (){
-            $("#x1").append("No. It is a tomatow")
+        $("#after").click(function (){
+            $("#add1").append("No. It is a tomatow")
         })
-        $("#show2").click(function (){
-            $("#x2").append("<li>Tôi là Quang </li>")
+        $("#before").click(function (){
+            $("#add2").append("<li>Tôi là Quang </li>")
         })
         //Thêm vào đầu câu thì dùng  prepend .
-        $("#show3").click(function (){
-            $("#x1").prepend("What your  name .")
+        $("#append").click(function (){
+            $("#add1").prepend("What your  name .")
         })
-        $("#show4").click(function (){
-            $("#x2").prepend("<li>Đà Nẵng </li>")
+        $("#prepend").click(function (){
+            $("#add2").prepend("<li>Đà Nẵng </li>")
         })
     })
 
 </script>
 <style>
-    #x1,#x2{
+    #add1,#add2{
         margin-top: 20px;
 
     }
@@ -37,25 +37,25 @@
 
 
 
-<button id="show3">
-    Nhấn để thêm vào đầu câu trong p
+<button id="append">
+    Nhấn để thêm vào đầu câu trong
 </button>
-<button id="show4">
-    Nhấn để thêm vào đầu câu trong  ul
+<button id="prepend">
+    Nhấn để thêm vào đầu câu trong
 </button>
-<button id="show1">
+<button id="after">
     Nhấn để thêm Vào cuối câu
 </button>
 
-<button id="show2">
+<button id="before">
     Nhâns để thêm vào cuối câu .
 </button>
 
-<div id="x1">
+<div id="add1">
     This is a cake
 </div>
 
-<ul id="x2">
+<ul id="add2">
     <li>Hà Nội </li>
     <li>Thành Phố Hồ Chí Minh .</li>
 </ul>

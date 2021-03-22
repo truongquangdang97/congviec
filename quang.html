@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <input type="text" id="name" placeholder="Nhap ten">
+    <input type="text" id="age" placeholder="Nhap tuoi">
+    <button onclick="add()">add</button>
+</div>
+
+<div>
+    <tr>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+    <div style="color: #ce4844" id="thieuten"></div>
+    <div style="color: #ce4844" id="thieutuoi"></div>
+
+    <div id="kethua">
+
+    </div>
+</div>
+<script>
+    function add(){
+
+        if (!ten){
+            document.getElementById("thieuten").innerHTML="nhap thieu"
+        }else {
+            document.getElementById("thieuten").innerHTML=""
+        }
+        if (!tuoi){
+            document.getElementById("thieutuoi").innerHTML="nhap thieu"
+        }else {
+            document.getElementById("thieutuoi").innerHTML=""
+
+        }
+
+        var ten=document.getElementById("name").value;
+        var tuoi= document.getElementById("age").value;
+
+
+        var ds= {
+            name : ten,
+            age : tuoi,
+        }
+        // var list=[]
+        if(ten&&tuoi){
+            // list.push(ds)
+            document.getElementById("kethua").innerHTML +=`<tr>
+        <th>${ten}</th>
+        <th>${tuoi}</th>
+    </tr> </br>`
+        }
+    }
+
+
+    list={
+        quang:[1,2,3],
+        hung:[4,5,6],
+        thai:[7,8,9]
+    }
+
+    function a(){
+        var check=document.getElementById("")
+
+
+    }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
