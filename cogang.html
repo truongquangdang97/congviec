@@ -79,6 +79,9 @@
             <div id="ouput">
 
             </div>
+            <div id="ok">
+
+            </div>
         </div>
     </div>
 </section>
@@ -232,12 +235,18 @@
         p.innerHTML=q;
     }
 
-    function search(){
-        var check=document.getElementById("search").value;
 
+
+    function search(){
+        alert("cos nhan gia tri")
+
+        var thay = document.getElementById("ouput")
+
+        var check = document.getElementById("search").value;
         for (var i=0;i<list.length;i++){
             if (check===list[i].name){
-                x+=`<tr>
+                var q="<table class='table table-hover table-dark table-striped table-borderless'>";
+                q +=`<tr>
                     <th>id</th>
                     <th>code</th>
                     <th>name</th>
@@ -245,24 +254,30 @@
                     <th>phone</th>
                     <th>adress</th>
                 </tr>`
-                    x+=`<tr>
+
+                    q+=`<tr>
                     <th>${+i+1}</th>
                     <th>${list[i].code}</th>
                     <th>${list[i].name}</th>
                     <th>${list[i].city}</th>
                     <th>${list[i].phone}</th>
                     <th>${list[i].address}</th>
-                      <th> <button onclick="sua(${i})" style="float: right" id="btn"
+                    <th> <button onclick="sua(${i})" style="float: right" id="btn_update"
                       type="button" class="btn btn-primary button" data-toggle="modal"
                        data-target="#exampleModal">
             Edit
         </button></th>
                       <th><button onclick="xoa(${i})">delete</button></th>
                 </tr>`
-                input.innerHTML=x;
 
+                "</table>"
+                thay.innerHTML=q;
             }
         }
+
+
+
+
     }
 
 

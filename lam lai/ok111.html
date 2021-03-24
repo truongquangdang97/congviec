@@ -55,7 +55,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button id="btn_update" type="button" class="btn btn-primary btn-cp" onclick="addSchool()">Add</button>
+                        " o<button id="btn_update" type="button" class="btn btn-primary btn-cpnclick="addSchool()">Add</button>
                         <button type="button" class="btn btn-secondary btn-cp" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -157,12 +157,9 @@
                     <th>${dt[i].city}</th>
                     <th>${dt[i].phone}</th>
                     <th>${dt[i].address}</th>
-                    <th> <button onclick="vietlai(${i})" style="float: right" id="btn"
-                      type="button" class="btn btn-primary button" data-toggle="modal"
-                       data-target="#exampleModal">
-                                     Edit
-                            </button></th>
-        </button></th>
+                    <th><button >Edit</button></th>
+                                            " o<button id="btn_update" type="button" class="btn btn-primary btn-cpnclick="addSchool()">Add</button>
+
                       <th><button onclick="xoa(${i})">delete</button></th>
                 </tr>`
         }
@@ -220,11 +217,7 @@
                     <th>${list[i].city}</th>
                     <th>${list[i].phone}</th>
                     <th>${list[i].address}</th>
-                    <th> <button onclick="sua(${i})" style="float: right" id="btn"
-                      type="button" class="btn btn-primary button" data-toggle="modal"
-                       data-target="#exampleModal">
-            Edit
-        </button></th>
+
                       <th><button onclick="xoa(${i})">delete</button></th>
                 </tr>`
         }

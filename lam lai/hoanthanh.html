@@ -46,27 +46,62 @@
 
 </div>
 <script>
-
     var city={
         "Ha Noi":0,
         "HCM":0,
         "Ca Mau":0
     }
+
+
+
     var tentinh= document.getElementById("city")
     for (var ten in city){
         tentinh.innerHTML +=`<option value="${ten}">${ten}</option>`
     }
 
-    var list=[];
+    var list=[
+        {
+            id:1,
+            code: 156,
+            name: "Trường Ngô Quyền",
+            province: "HN",
+            phonenumber: "0969987654",
+            address: "8 Tôn Thất Thuyết"
+        },
+        {
+            id:2,
+            code: 278,
+            name: "Trường PCT",
+            province: "HN",
+            phonenumber: "1234567890",
+            address: "45 Phan Châu Trinh"
+        },
+        {
+            id:3,
+            code: 398,
+            name: "Trường Vạn Phúc",
+            province: "HN",
+            phonenumber: "0987654321",
+            address: "Khu đô thị Vạn Phúc"
+        },
+        {
+            id:4,
+            code: 405,
+            name: "Trường kong",
+            province: "HCM",
+            phonenumber: "1234509876",
+            address: "18 Trung Kính"
+        }
+    ];
+
+
+
 
 
 
 
     var count=0;
     function add(){
-
-
-
         var index = document.getElementById("quang").value;
         var id=document.getElementById("id").value;
         var code=document.getElementById("code").value;
@@ -86,13 +121,13 @@
 
 
 
-        if (index!=''){
+        if (index!=""){
             list[index]=school
             show()
             return ;
         }
+
         list.push(school);
-        console.log(list)
 
         document.getElementById("ouput").innerHTML +=`<tr>
             <th>${++count}</th>
@@ -112,6 +147,7 @@
         list.splice(index,1)
         show()
     }
+
     function show(){
         document.getElementById("ouput").innerHTML="";
 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/test.css">
+
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button style="float: right" id="btn" type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal">
+            Tạo Mới
+        </button>
+
+        <input class="search" id="search" type="text" name="search"/> <button onclick="search()" class="btn-sr" id="btn_sr" type="button">Tìm Kiếm</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Add New Iphone</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="code">Code: </label>
+                                <input type="text" class="form-control" placeholder="Enter Code" id="code">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="provinceID">Province:</label>
+                                <select name="cars" class="form-pr" id="provinceID">
+                                    <option value="HN">HN</option>
+                                    <option value="HCM">HCM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumber">Phone number: </label>
+                                <input type="text" class="form-control" placeholder="Enter phone number" id="phonenumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address: </label>
+                                <input type="text" class="form-control" placeholder="Enter address" id="address">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn_update" type="button" class="btn btn-primary btn-cp" onclick="addSchool()">Add</button>
+                        <button type="button" class="btn btn-secondary btn-cp" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main">
+    <div class="container">
+        <div id="table">
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    var listSchool = [
+        {
+            code: 156,
+            name: "Trường Ngô Quyền",
+            province: "HN",
+            phonenumber: "0969987654",
+            address: "8 Tôn Thất Thuyết"
+        },
+        {
+            code: 278,
+            name: "Trường PCT",
+            province: "HN",
+            phonenumber: "1234567890",
+            address: "45 Phan Châu Trinh"
+        },
+        {
+            code: 398,
+            name: "Trường Vạn Phúc",
+            province: "HN",
+            phonenumber: "0987654321",
+            address: "Khu đô thị Vạn Phúc"
+        },
+        {
+            code: 405,
+            name: "Trường kong",
+            province: "HCM",
+            phonenumber: "1234509876",
+            address: "18 Trung Kính"
+        }
+    ];
+
+    var provinces = [
+        {
+            id: "1",
+            name: "HN"
+        },
+        {
+            id: "2",
+            name: "HCM"
+        },
+        {
+            id: "3",
+            name: "Sai Gon"
+        }
+    ]
+
+    var dataListTag=document.getElementById("result")
+    show(listSchool)
+
+    function show(dt){
+        var n = "<table class='table table-hover table-dark table-striped table-borderless'>";
+        // Cột tiêu đề
+        n += "  <tr>";
+        n += "<th> STT </th>";
+        n += "<th> Code </th>";
+        n += "<th> Name </th>";
+        n += "<th> Province </th>";
+        n += "<th> Edit </th>";
+        n += "</tr>";
+        // Duyệt dữ liệu
+        for (var i = 0; i < dt.length; i++){
+            n += "<tr>";
+            n += "<td>" + (i+1) + "</td>";
+            n += "<td>" + dt[i].code + "</td>";
+            n += "<td>" + dt[i].name + "</td>";
+            n += "<td>" + dt[i].province + "</td>";
+            n += "</td>";
+            n += "<td>" + "<button id=\"btn\" type=\"button\" class=\"btn btn-primary button\" data-toggle=\"modal\" data-target=\"#exampleModal\" onclick='edit(\""+dt[i].code+"\")'>\n" +
+                "                <i class='fas fa-pencil-alt'></i>\n" +
+                "            </button>" + "</td>";
+            n += "</tr>";
+        }
+        n += "</table>";
+        dataListTag.innerHTML = n;
+    }
+
+
+</script>
+
+
+</body>
+</html>
