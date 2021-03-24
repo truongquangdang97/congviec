@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/test.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button style="float: right" id="btn" type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal">
+            Tạo Mới
+        </button>
+
+        <input class="search" id="search" type="text" name="search"/> <button onclick="search()" class="btn-sr" id="btn_sr" type="button">Tìm Kiếm</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Add New Iphone</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="code">Code: </label>
+                                <input type="text" class="form-control" placeholder="Enter Code" id="code">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">city:</label>
+                                <select name="cars" class="form-pr" id="city">
+                                    <option value="HN">HN</option>
+                                    <option value="HCM">HCM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone number: </label>
+                                <input type="text" class="form-control" placeholder="Enter phone number" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address: </label>
+                                <input type="text" class="form-control" placeholder="Enter address" id="address">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn_update" type="button" class="btn btn-primary btn-cp" onclick="addSchool()">Add</button>
+                        <button type="button" class="btn btn-secondary btn-cp" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main">
+    <div class="container">
+        <div id="table">
+            <table>
+<!--                <tr>-->
+<!--                    <th>id</th>-->
+<!--                    <th>code</th>-->
+<!--                    <th>name</th>-->
+<!--                    <th>city</th>-->
+<!--                    <th>phone</th>-->
+<!--                    <th>adress</th>-->
+<!--                </tr>-->
+            </table>
+            <div id="ouput">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    var list = [
+        {
+            code: 156,
+            name: "quang",
+            city: "HN",
+            phone: "0969987654",
+            address: "8 Tôn Thất Thuyết"
+        },
+        {
+            code: 278,
+            name: "Tư ",
+            city: "HN",
+            phone: "1234567890",
+            address: "45 Phan Châu Trinh"
+        },
+        {
+            code: 398,
+            name: "Tuấn ",
+            city: "HN",
+            phone: "0987654321",
+            address: "Khu đô thị Vạn Phúc"
+        },
+        {
+            code: 405,
+            name: "Trường kong",
+            city: "HCM",
+            phone: "1234509876",
+            address: "18 Trung Kính"
+        }
+    ];
+
+    var citys = [
+        {
+            id: "1",
+            name: "HN"
+        },
+        {
+            id: "2",
+            name: "HCM"
+        },
+        {
+            id: "3",
+            name: "Sai Gon"
+        }
+    ]
+
+    var input = document.getElementById("ouput");
+
+    show(list);
+
+
+    function show(dt){
+      var x = "<table class='table table-hover table-dark table-striped table-borderless'>";
+        x+=`<tr>
+                    <th>id</th>
+                    <th>code</th>
+                    <th>name</th>
+                    <th>city</th>
+                    <th>phone</th>
+                    <th>adress</th>
+                </tr>`
+        for (var i=0 ;i<dt.length;i++){
+            x+=`<tr>
+                    <th>${+i+1}</th>
+                    <th>${dt[i].code}</th>
+                    <th>${dt[i].name}</th>
+                    <th>${dt[i].city}</th>
+                    <th>${dt[i].phone}</th>
+                    <th>${dt[i].address}</th>
+                    <th> <button onclick="vietlai(${i})" style="float: right" id="btn"
+                      type="button" class="btn btn-primary button" data-toggle="modal"
+                       data-target="#exampleModal">
+                                     Edit
+                            </button></th>
+        </button></th>
+                      <th><button onclick="xoa(${i})">delete</button></th>
+                </tr>`
+        }
+      x+="</table>"
+        input.innerHTML=x;
+    }
+
+    function addSchool(){
+      var code= document.getElementById("code").value
+        var name =document.getElementById("name").value
+        var city =document.getElementById("city").value
+        var phone =document.getElementById("phone").value
+        var adress =document.getElementById("address").value
+
+        var school={
+            code:code,
+            name:name,
+            phone:phone,
+            city:city,
+            adress:adress,
+        }
+
+        list.push(school);
+         show(list)
+        document.getElementById("code").value=""
+        document.getElementById("name").value=""
+        document.getElementById("city").value=""
+        document.getElementById("phone").value=""
+        document.getElementById("address").value=""
+    }
+    function xoa(index){
+
+        list.splice(index,1)
+        show2();
+
+    }
+
+    var p=document.getElementById("ouput")
+    function show2(){
+        document.getElementById("ouput").innerHTML=""
+        var q="<table class='table table-hover table-dark table-striped table-borderless'>";
+        q +=`<tr>
+                    <th>id</th>
+                    <th>code</th>
+                    <th>name</th>
+                    <th>city</th>
+                    <th>phone</th>
+                    <th>adress</th>
+                </tr>`
+        for (var i=0;i<list.length;i++){
+            q+=`<tr>
+                    <th>${+i+1}</th>
+                    <th>${list[i].code}</th>
+                    <th>${list[i].name}</th>
+                    <th>${list[i].city}</th>
+                    <th>${list[i].phone}</th>
+                    <th>${list[i].address}</th>
+                    <th> <button onclick="sua(${i})" style="float: right" id="btn"
+                      type="button" class="btn btn-primary button" data-toggle="modal"
+                       data-target="#exampleModal">
+            Edit
+        </button></th>
+                      <th><button onclick="xoa(${i})">delete</button></th>
+                </tr>`
+        }
+        "</table>"
+        p.innerHTML=q;
+    }
+
+    // function search(){
+    //     var check=document.getElementById("search").value;
+    //
+    //     for (var i=0;i<list.length;i++){
+    //         if (check===list[i].name){
+    //             x+=`<tr>
+    //                 <th>id</th>
+    //                 <th>code</th>
+    //                 <th>name</th>
+    //                 <th>city</th>
+    //                 <th>phone</th>
+    //                 <th>adress</th>
+    //             </tr>`
+    //                 x+=`<tr>
+    //                 <th>${+i+1}</th>
+    //                 <th>${list[i].code}</th>
+    //                 <th>${list[i].name}</th>
+    //                 <th>${list[i].city}</th>
+    //                 <th>${list[i].phone}</th>
+    //                 <th>${list[i].address}</th>
+    //                   <th> <button onclick="sua(${i})" style="float: right" id="btn"
+    //                   type="button" class="btn btn-primary button" data-toggle="modal"
+    //                    data-target="#exampleModal">
+    //         Edit
+    //     </button></th>
+    //                   <th><button onclick="xoa(${i})">delete</button></th>
+    //             </tr>`
+    //             input.innerHTML=x;
+    //
+    //         }
+    //     }
+    // }
+
+
+    // function sua(index){
+    //     console.log(index);
+    //     var end = list[index];
+    //     document.getElementById("code").value=list[index].code;
+    //     document.getElementById("name").value=list[index].name;
+    //     document.getElementById("city").value=list[index].city;
+    //     document.getElementById("phone").value=list[index].phone;
+    //     document.getElementById("address").value=list[index].address;
+    //     document.getElementById("btn_update").innerHTML="Hoan Thanh"
+    //     document.getElementById("btn_update").onclick= vietlai;
+    //     function vietlai(index){
+    //         end.code=document.getElementById("code").value;
+    //         end.name=document.getElementById("name").value;
+    //         end.city=document.getElementById("city").value;
+    //         end.phone=document.getElementById("phone").value;
+    //         end.address=document.getElementById("address").value;
+    //         show(list);
+    //         alert("Sửa thành công ???")
+    //     }
+    // }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
