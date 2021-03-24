@@ -185,10 +185,39 @@
             name:name,
             phone:phone,
             city:city,
-            adress:adress,
+            address:adress,
+        }
+        if (code&&name&&city&&phone&&adress){
+            list.push(school);
+        }else {
+            alert("Nhập thiếu hãy nhập lại ")
+            document.getElementById("code").focus();
+            return ;
         }
 
-        list.push(school);
+        // if (code&name&&city&&phone&&adress){
+        //     list.push(school);
+        // }else {
+        //     alert("Nhập thiếu hãy nhập lại ")
+        //     document.getElementById("code").value=""
+        //     document.getElementById("name").value=""
+        //     document.getElementById("city").value=""
+        //     document.getElementById("phone").value=""
+        //     document.getElementById("address").value=""
+        // }
+        // if (!code){
+        //     alert("Code không được để trống!");
+        //     document.getElementById("code").focus();
+        //     return ;
+        // }
+
+
+
+
+
+
+
+
         show(list)
         document.getElementById("code").value=""
         document.getElementById("name").value=""
@@ -196,11 +225,14 @@
         document.getElementById("phone").value=""
         document.getElementById("address").value=""
     }
+
+
+
     function xoa(index){
-
-        list.splice(index,1)
-        show2();
-
+        if (confirm("Chắc chắn muốn xoá không ?")){
+            list.splice(index,1)
+            show2();
+        }
     }
 
     var p=document.getElementById("ouput")
@@ -238,7 +270,7 @@
 
 
     function search(){
-        alert("cos nhan gia tri")
+        alert("Giá trị là :")
 
         var thay = document.getElementById("ouput")
 
